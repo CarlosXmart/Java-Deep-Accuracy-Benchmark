@@ -1,0 +1,21 @@
+# Local benchmark output
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Maven / Java
+target/
+build-harness/target/
+*.class
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+package org.javadeep.benchmark.cases.level5;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.util.Map;
+import java.util.Objects;
+import java.util.function.BiConsumer;
+
+public class Case000318 {
+    public Object run(HttpServletRequest request, HttpServletResponse response, Map<String, String> accountState) throws Exception {
+        String supplied = request.getParameter("csrf");
+        Object expected = request.getSession(false) == null ? null : request.getSession(false).getAttribute("csrf");
+        if (expected == null || !Objects.equals(expected.toString(), supplied)) {
+            response.sendError(403, "forbidden");
+            return null;
+        }
+        BiConsumer<String, String> change = accountState::put;
+        change.accept("email", request.getParameter("email"));
+        return null;
+    }
+}

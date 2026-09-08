@@ -1,0 +1,18 @@
+package org.javadeep.benchmark.cases.level4;
+
+import jakarta.servlet.http.HttpServletRequest;
+import java.security.Principal;
+import java.util.function.BiPredicate;
+
+public class Case000533 {
+    public Object run(HttpServletRequest request) throws Exception {
+        Principal principal = request.getUserPrincipal();
+        String authenticatedUser = principal == null ? null : principal.getName();
+        String requestedUser = request.getParameter("user");
+        return loadRecord(requestedUser);
+    }
+
+    private String loadRecord(String user) {
+        return "record:" + user;
+    }
+}

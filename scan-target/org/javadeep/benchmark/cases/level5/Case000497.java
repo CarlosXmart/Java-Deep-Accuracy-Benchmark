@@ -1,0 +1,18 @@
+package org.javadeep.benchmark.cases.level5;
+
+import java.util.function.Function;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+public class Case000497 {
+    public Object run(Document document, String input) throws Exception {
+        Function<String, String> relay = value -> value;
+        String value = relay.apply(input);
+        XPath xpath = XPathFactory.newInstance().newXPath();
+        String expression = "/users/user[name='" + value + "']";
+        return xpath.evaluate(expression, document, XPathConstants.NODESET);
+    }
+}

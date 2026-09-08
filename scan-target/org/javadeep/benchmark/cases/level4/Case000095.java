@@ -1,0 +1,14 @@
+package org.javadeep.benchmark.cases.level4;
+
+import org.javadeep.benchmark.support.BenchSupport;
+import jakarta.servlet.http.HttpServletRequest;
+import javax.naming.directory.DirContext;
+import javax.naming.directory.SearchControls;
+
+public class Case000095 {
+    public Object run(DirContext context, HttpServletRequest request) throws Exception {
+        String value = request.getParameter("q");
+        String filter = "(&(objectClass=person)(cn=" + value + "))";
+        return context.search("ou=people", filter, new SearchControls());
+    }
+}
