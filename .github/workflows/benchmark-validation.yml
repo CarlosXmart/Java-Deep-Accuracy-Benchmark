@@ -1,0 +1,46 @@
+name: Benchmark validation
+
+on:
+  push:
+    branches:
+      - main
+      - feat/**
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Python contract tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Validate ground truth
+        run: python tools/validate_ground_truth.py
+
+      - name: Validate scan payload
+        run: python tools/validate_cases.py
+
+      - name: Verify deterministic materialization
+        run: python corpus/generate_cases.py --check
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Compile benchmark fixtures without executing them
+        run: mvn -q -f build-harness/pom.xml -DskipTests compile
