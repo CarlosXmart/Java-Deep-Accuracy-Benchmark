@@ -1,0 +1,22 @@
+name: Validate Java Benchmark
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+      - name: Validate ground truth and source hygiene
+        run: python3 tools/selftest_evaluator.py
+      - name: Compile benchmark source
+        working-directory: build-harness
+        run: mvn -q -DskipTests compile

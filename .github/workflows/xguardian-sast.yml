@@ -1,0 +1,33 @@
+name: XGuardian Java Deep Accuracy SAST
+on:
+  workflow_dispatch:
+jobs:
+  sast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required configuration
+        shell: bash
+        env:
+          TOKEN: ${{ secrets.XGUARDIAN_TOKEN }}
+          APP_ID: ${{ vars.XGUARDIAN_APP_ID }}
+        run: |
+          test -n "$TOKEN" || { echo "::error::Configure secret XGUARDIAN_TOKEN"; exit 1; }
+          [[ "$APP_ID" =~ ^[1-9][0-9]*$ ]] || { echo "::error::Configure numeric XGUARDIAN_APP_ID"; exit 1; }
+          test -d scan-target
+          echo "Official score payload: scan-target/ only"
+      - name: Run XGuardian SAST
+        id: xguardian
+        uses: xguardian-actions/actions/sast@6373d9375d3a859f602dcf53b37a3d8326c8a248
+        with:
+          token: ${{ secrets.XGUARDIAN_TOKEN }}
+          app_id: ${{ vars.XGUARDIAN_APP_ID }}
+          scan_directory: "scan-target"
+          translate: "false"
+          pdf: "false"
+          get_scan_id: "true"
+      - name: Summary
+        run: |
+          echo "Scan ID: ${{ steps.xguardian.outputs.scan_id }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Scanned directory: scan-target/" >> "$GITHUB_STEP_SUMMARY"
+          echo "Export the XGuardian JSON and run tools/evaluate_xguardian.py for the benchmark score." >> "$GITHUB_STEP_SUMMARY"

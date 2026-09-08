@@ -1,0 +1,8 @@
+results/**
+!results/.gitkeep
+*.zip
+*.log
+.DS_Store
+.idea/
+.vscode/
+target/
