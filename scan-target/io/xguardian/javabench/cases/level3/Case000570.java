@@ -18,6 +18,7 @@ public class Case000570 {
 
     private Cookie buildCookie(String value) {
         Cookie cookie = new Cookie("session", value);
+        cookie.setSecure(true);
         cookie.setHttpOnly(true);
         return cookie;
     }

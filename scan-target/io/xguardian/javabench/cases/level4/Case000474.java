@@ -9,6 +9,7 @@ public class Case000474 {
     public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String value = request.getParameter("session");
         Cookie cookie = new Cookie("session", value);
+        cookie.setHttpOnly(true);
         cookie.setSecure(true);
         response.addCookie(cookie);
         return cookie;

@@ -10,6 +10,7 @@ public class Case000479 {
         String value = relay.apply(sessionId);
         Function<String, Cookie> factory = item -> {
             Cookie cookie = new Cookie("session", item);
+            cookie.setHttpOnly(true);
             return cookie;
         };
         Cookie cookie = factory.apply(value);

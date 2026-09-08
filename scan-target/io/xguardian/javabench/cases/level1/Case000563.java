@@ -7,6 +7,7 @@ import java.util.function.Function;
 public class Case000563 {
     public Object run(String sessionId, HttpServletResponse response) throws Exception {
         Cookie cookie = new Cookie("session", sessionId);
+        cookie.setSecure(true);
         response.addCookie(cookie);
         return cookie;
     }

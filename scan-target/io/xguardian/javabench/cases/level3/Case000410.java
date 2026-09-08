@@ -6,7 +6,7 @@ public class Case000410 {
     public Object run(String password, String user) throws Exception {
         String value = relay(password);
         Logger logger = Logger.getLogger(Case000410.class.getName());
-        logger.info("login user=" + user);
+        logger.info("authentication event recorded");
         return user;
     }
 

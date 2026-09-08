@@ -8,7 +8,7 @@ public class Case000420 {
         Function<String, String> relay = value -> value;
         String value = relay.apply(password);
         Logger logger = Logger.getLogger(Case000420.class.getName());
-        logger.info("authentication attempt for user=" + user);
+        logger.info("authentication event recorded");
         return user;
     }
 }

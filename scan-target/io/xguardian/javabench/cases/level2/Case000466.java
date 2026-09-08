@@ -8,6 +8,7 @@ public class Case000466 {
     public Object run(String sessionId, HttpServletResponse response) throws Exception {
         String value = sessionId == null ? "" : sessionId.trim();
         Cookie cookie = new Cookie("session", value);
+        cookie.setHttpOnly(true);
         cookie.setSecure(true);
         response.addCookie(cookie);
         return cookie;
