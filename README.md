@@ -112,6 +112,7 @@ python3 tools/compare_runs.py \
 - [Guia de tuning](docs/RULE_TUNING_GUIDE.md)
 - [Política de holdout](docs/HOLDOUT_POLICY.md)
 - [Validação externa](docs/EXTERNAL_VALIDATION.md)
+- [Referências oficiais](docs/REFERENCES.md)
 - [Limitações](docs/KNOWN_LIMITATIONS.md)
 - [Cobertura CWE](docs/CWE_COVERAGE.md)
 - [Catálogo CWE](docs/cwe/INDEX.md)
