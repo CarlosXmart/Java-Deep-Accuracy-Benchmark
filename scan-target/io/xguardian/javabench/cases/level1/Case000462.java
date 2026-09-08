@@ -2,9 +2,10 @@ package io.xguardian.javabench.cases.level1;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.function.Function;
 
 public class Case000462 {
-    public Object run(HttpServletResponse response, String sessionId) throws Exception {
+    public Object run(String sessionId, HttpServletResponse response) throws Exception {
         Cookie cookie = new Cookie("session", sessionId);
         cookie.setSecure(true);
         response.addCookie(cookie);

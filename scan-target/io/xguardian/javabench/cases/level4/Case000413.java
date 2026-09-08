@@ -4,9 +4,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import java.util.logging.Logger;
 
 public class Case000413 {
-    public Object run(String user, String password) throws Exception {
+    public Object run(HttpServletRequest request) throws Exception {
+        String value = request.getParameter("password");
         Logger logger = Logger.getLogger(Case000413.class.getName());
-        logger.info("login user=" + user + " password=" + password);
-        return user;
+        logger.info("login user=" + request.getParameter("user") + " password=" + value);
+        return request.getParameter("user");
     }
 }

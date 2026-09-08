@@ -1,7 +1,13 @@
 package io.xguardian.javabench.cases.level5;
 
+import java.util.Map;
+import java.util.function.Supplier;
+
 public class Case000520 {
     public Object run(String user) throws Exception {
-        return System.getProperty("benchmark.external.credential");
+        Supplier<String> credential = () -> System.getenv("SERVICE_PASSWORD");
+        String value = credential.get();
+        if (value == null) throw new IllegalStateException("credential unavailable");
+        return user + ":" + value;
     }
 }

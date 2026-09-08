@@ -2,14 +2,16 @@ package io.xguardian.javabench.cases.level5;
 
 import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
+import java.net.URLEncoder;
 import java.net.http.HttpRequest;
+import java.nio.charset.StandardCharsets;
+import java.util.function.Function;
 
 public class Case000197 {
-    public Object run(String input) throws Exception {
-        java.util.function.Function<String,String> relay = x -> x;
-        String value = relay.apply(input);
-        URI uri = URI.create("http://" + value);
+    public Object run(String token) throws Exception {
+        Function<String, String> relay = value -> value;
+        String value = relay.apply(token);
+        URI uri = URI.create("http://api.example.test/session?token=" + URLEncoder.encode(value, StandardCharsets.UTF_8));
         return HttpRequest.newBuilder(uri).GET().build();
     }
 }

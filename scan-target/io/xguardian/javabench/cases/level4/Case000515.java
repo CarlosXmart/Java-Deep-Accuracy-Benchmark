@@ -1,10 +1,11 @@
 package io.xguardian.javabench.cases.level4;
 
-import jakarta.servlet.http.HttpServletRequest;
+import java.util.Map;
+import java.util.function.Supplier;
 
 public class Case000515 {
     public Object run(String user) throws Exception {
-        final String apiCredential = "benchmark-only-credential-798";
-        return apiCredential;
+        String credential = Map.of("service", "benchmark-only-credential-798").get("service");
+        return user + ":" + credential;
     }
 }

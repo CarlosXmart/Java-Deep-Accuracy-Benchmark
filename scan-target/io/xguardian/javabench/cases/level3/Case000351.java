@@ -8,7 +8,8 @@ import java.nio.file.StandardCopyOption;
 
 public class Case000351 {
     public Object run(InputStream stream, String fileName) throws Exception {
-        String name = BenchSupport.basename(fileName);
+        String value = relay(fileName);
+        String name = BenchSupport.basename(value);
         Path target = Path.of("/srv/uploads").resolve(name);
         Files.copy(stream, target, StandardCopyOption.REPLACE_EXISTING);
         return target;

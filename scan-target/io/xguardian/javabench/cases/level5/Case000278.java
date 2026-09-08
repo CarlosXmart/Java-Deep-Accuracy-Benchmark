@@ -2,12 +2,14 @@ package io.xguardian.javabench.cases.level5;
 
 import java.security.SecureRandom;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class Case000278 {
-    public Object run(String input) throws Exception {
-        java.util.function.Function<String,String> relay = x -> x;
-        String value = relay.apply(input);
-        SecureRandom random = new SecureRandom();
-        return random.nextLong();
+    public Object run() throws Exception {
+        return Holder.create().nextLong();
+    }
+
+    private static final class Holder {
+        static SecureRandom create() { return new SecureRandom(); }
     }
 }

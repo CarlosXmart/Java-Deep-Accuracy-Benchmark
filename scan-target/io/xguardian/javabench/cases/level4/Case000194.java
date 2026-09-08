@@ -3,13 +3,14 @@ package io.xguardian.javabench.cases.level4;
 import jakarta.servlet.http.HttpServletRequest;
 import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
+import java.net.URLEncoder;
 import java.net.http.HttpRequest;
+import java.nio.charset.StandardCharsets;
 
 public class Case000194 {
     public Object run(HttpServletRequest request) throws Exception {
-        String value = request.getParameter("value");
-        URI uri = URI.create("https://api.example.test/session?token=" + java.net.URLEncoder.encode(value, java.nio.charset.StandardCharsets.UTF_8));
+        String value = request.getParameter("token");
+        URI uri = URI.create("https://api.example.test/session?token=" + URLEncoder.encode(value, StandardCharsets.UTF_8));
         return HttpRequest.newBuilder(uri).GET().build();
     }
 }

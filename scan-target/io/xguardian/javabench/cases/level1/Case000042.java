@@ -1,14 +1,12 @@
 package io.xguardian.javabench.cases.level1;
 
 import io.xguardian.javabench.support.BenchSupport;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class Case000042 {
-    public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String value = request.getParameter("name");
+    public Object run(String input, HttpServletResponse response) throws Exception {
         response.setContentType("text/html");
-        response.getWriter().write("<div>" + BenchSupport.htmlEscape(value) + "</div>");
+        response.getWriter().write("<div>" + BenchSupport.htmlEscape(input) + "</div>");
         return null;
     }
 }

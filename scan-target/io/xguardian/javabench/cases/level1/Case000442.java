@@ -1,6 +1,8 @@
 package io.xguardian.javabench.cases.level1;
 
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.InputStream;
+import java.util.function.Supplier;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
 

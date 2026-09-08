@@ -8,8 +8,9 @@ import org.w3c.dom.NodeList;
 
 public class Case000487 {
     public Object run(Document document, String input) throws Exception {
+        String value = input == null ? "" : input.trim();
         XPath xpath = XPathFactory.newInstance().newXPath();
-        String expression = String.format("/users/user[@id='%s']", input);
+        String expression = String.format("/users/user[@id='%s']", value);
         return xpath.evaluate(expression, document, XPathConstants.NODESET);
     }
 }

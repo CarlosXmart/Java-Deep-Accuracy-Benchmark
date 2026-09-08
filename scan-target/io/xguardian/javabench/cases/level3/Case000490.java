@@ -8,10 +8,11 @@ import org.w3c.dom.NodeList;
 
 public class Case000490 {
     public Object run(Document document, String input) throws Exception {
+        String value = relay(input);
         XPath xpath = XPathFactory.newInstance().newXPath();
         NodeList nodes = (NodeList) xpath.evaluate("/users/user", document, XPathConstants.NODESET);
         for (int i = 0; i < nodes.getLength(); i++) {
-            if (input != null && input.equals(nodes.item(i).getTextContent())) return nodes.item(i);
+            if (value != null && value.equals(nodes.item(i).getTextContent())) return nodes.item(i);
         }
         return null;
     }

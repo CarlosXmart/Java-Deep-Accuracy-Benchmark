@@ -1,16 +1,18 @@
 package io.xguardian.javabench.cases.level3;
 
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.InputStream;
+import java.util.function.Supplier;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 public class Case000449 {
     public Object run(InputStream input) throws Exception {
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilderFactory factory = factory();
         return factory.newDocumentBuilder().parse(input);
     }
 
-    private String relay(String value) {
-        return value;
+    private DocumentBuilderFactory factory() {
+        return DocumentBuilderFactory.newInstance();
     }
 }

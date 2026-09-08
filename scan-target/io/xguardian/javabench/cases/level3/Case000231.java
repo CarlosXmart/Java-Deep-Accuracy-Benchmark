@@ -1,14 +1,15 @@
 package io.xguardian.javabench.cases.level3;
 
+import java.util.Map;
+import java.util.function.Supplier;
 import javax.crypto.Cipher;
 
 public class Case000231 {
-    public Object run(String input) throws Exception {
-        String value = relay(input);
-        return Cipher.getInstance("RC4");
+    public Object run() throws Exception {
+        return Cipher.getInstance(algorithm());
     }
 
-    private String relay(String value) {
-        return value;
+    private String algorithm() {
+        return "RC4";
     }
 }

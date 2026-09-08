@@ -1,5 +1,8 @@
 package io.xguardian.javabench.cases.level3;
 
+import jakarta.servlet.http.HttpServletRequest;
+import java.beans.XMLDecoder;
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.ObjectInputFilter;
 import java.io.ObjectInputStream;
@@ -7,13 +10,13 @@ import java.nio.charset.StandardCharsets;
 
 public class Case000390 {
     public Object run(InputStream input) throws Exception {
-        ObjectInputStream stream = new ObjectInputStream(input);
-        ObjectInputFilter filter = ObjectInputFilter.Config.createFilter("java.base/*;!*");
-        stream.setObjectInputFilter(filter);
-        return stream.readObject();
+        return deserializeAllowedString(input);
     }
 
-    private String relay(String value) {
-        return value;
+    private Object deserializeAllowedString(InputStream input) throws Exception {
+        ObjectInputStream stream = new ObjectInputStream(input);
+        ObjectInputFilter filter = ObjectInputFilter.Config.createFilter("java.base/java.lang.String;!*");
+        stream.setObjectInputFilter(filter);
+        return stream.readObject();
     }
 }

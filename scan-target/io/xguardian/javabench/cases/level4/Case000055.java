@@ -6,11 +6,9 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class Case000055 {
     public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String value = relay(request.getParameter("message"));
+        String value = request.getParameter("message");
         response.setContentType("text/html");
         response.getWriter().write(String.format("<p>%s</p>", value));
         return null;
     }
-
-    private String relay(String value) { return value; }
 }

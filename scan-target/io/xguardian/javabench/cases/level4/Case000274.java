@@ -1,13 +1,12 @@
 package io.xguardian.javabench.cases.level4;
 
-import jakarta.servlet.http.HttpServletRequest;
 import java.security.SecureRandom;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class Case000274 {
-    public Object run(HttpServletRequest request) throws Exception {
-        String value = request.getParameter("value");
-        SecureRandom random = new SecureRandom();
-        return random.nextLong();
+    public Object run() throws Exception {
+        Supplier<SecureRandom> factory = SecureRandom::new;
+        return factory.get().nextLong();
     }
 }

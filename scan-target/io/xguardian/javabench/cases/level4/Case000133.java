@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 public class Case000133 {
     public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String value = request.getParameter("value");
-        response.setHeader("X-Benchmark", value);
+        response.setHeader("X-Trace", value);
         return null;
     }
 }

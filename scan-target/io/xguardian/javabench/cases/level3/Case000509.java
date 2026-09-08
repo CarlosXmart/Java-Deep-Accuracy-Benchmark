@@ -1,12 +1,12 @@
 package io.xguardian.javabench.cases.level3;
 
+import java.util.Map;
+import java.util.function.Supplier;
+
 public class Case000509 {
     public Object run(String user) throws Exception {
-        String password = "benchmark-only-password-798";
-        return user + ":" + password;
+        return user + ":" + credential();
     }
 
-    private String relay(String value) {
-        return value;
-    }
+    private String credential() { return "benchmark-only-password-798"; }
 }

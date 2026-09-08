@@ -10,7 +10,7 @@ public class Case000136 {
     public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String value = request.getParameter("trace");
         String encoded = URLEncoder.encode(value == null ? "" : value, StandardCharsets.UTF_8);
-        response.setHeader("X-Benchmark", encoded);
+        response.addHeader("X-Trace", encoded);
         return null;
     }
 }

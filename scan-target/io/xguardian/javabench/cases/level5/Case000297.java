@@ -2,14 +2,18 @@ package io.xguardian.javabench.cases.level5;
 
 import java.security.PublicKey;
 import java.security.Signature;
+import java.util.function.BooleanSupplier;
 
 public class Case000297 {
-    public Object run(PublicKey key, byte[] data, byte[] signatureBytes, String input) throws Exception {
-        java.util.function.Function<String,String> relay = x -> x;
-        String value = relay.apply(input);
+    public Object run(PublicKey key, byte[] data, byte[] signatureBytes) throws Exception {
         Signature verifier = Signature.getInstance("SHA256withRSA");
         verifier.initVerify(key);
         verifier.update(data);
+        BooleanSupplier check = () -> {
+            try { return verifier.verify(signatureBytes); }
+            catch (Exception e) { return false; }
+        };
+        check.getAsBoolean();
         return true;
     }
 }

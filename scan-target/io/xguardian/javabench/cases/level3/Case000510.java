@@ -1,13 +1,16 @@
 package io.xguardian.javabench.cases.level3;
 
+import java.util.Map;
+import java.util.function.Supplier;
+
 public class Case000510 {
     public Object run(String user) throws Exception {
-        String password = System.getenv("SERVICE_PASSWORD");
-        if (password == null) throw new IllegalStateException("credential unavailable");
-        return user + ":" + password;
+        return user + ":" + credential();
     }
 
-    private String relay(String value) {
+    private String credential() {
+        String value = System.getenv("SERVICE_PASSWORD");
+        if (value == null) throw new IllegalStateException("credential unavailable");
         return value;
     }
 }

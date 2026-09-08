@@ -1,11 +1,12 @@
 package io.xguardian.javabench.cases.level4;
 
-import jakarta.servlet.http.HttpServletRequest;
+import java.util.Map;
+import java.util.function.Supplier;
 import javax.crypto.Cipher;
 
 public class Case000235 {
-    public Object run(HttpServletRequest request) throws Exception {
-        String value = request.getParameter("q");
-        return Cipher.getInstance("RC4");
+    public Object run() throws Exception {
+        String algorithm = Map.of("profile", "RC4").get("profile");
+        return Cipher.getInstance(algorithm);
     }
 }

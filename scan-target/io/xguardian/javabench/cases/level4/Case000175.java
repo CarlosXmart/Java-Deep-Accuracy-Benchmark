@@ -1,15 +1,18 @@
 package io.xguardian.javabench.cases.level4;
 
-import jakarta.servlet.http.HttpServletRequest;
+import java.net.URL;
 import java.security.cert.X509Certificate;
+import java.util.function.Supplier;
+import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 public class Case000175 {
-    public Object run(String input) throws Exception {
-        HttpsURLConnection.setDefaultHostnameVerifier((host, session) -> true);
-        return HttpsURLConnection.getDefaultSSLSocketFactory();
+    public Object run() throws Exception {
+        HttpsURLConnection connection = (HttpsURLConnection) new URL("https://example.test").openConnection();
+        connection.setHostnameVerifier((host, session) -> true);
+        return connection;
     }
 }

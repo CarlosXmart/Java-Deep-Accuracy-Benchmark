@@ -1,5 +1,8 @@
 package io.xguardian.javabench.cases.level3;
 
+import jakarta.servlet.http.HttpServletRequest;
+import java.beans.XMLDecoder;
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.ObjectInputFilter;
 import java.io.ObjectInputStream;
@@ -9,9 +12,5 @@ public class Case000392 {
     public Object run(InputStream input) throws Exception {
         byte[] bytes = input.readNBytes(4096);
         return new String(bytes, StandardCharsets.UTF_8);
-    }
-
-    private String relay(String value) {
-        return value;
     }
 }

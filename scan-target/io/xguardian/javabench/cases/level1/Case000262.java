@@ -2,10 +2,10 @@ package io.xguardian.javabench.cases.level1;
 
 import java.security.SecureRandom;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class Case000262 {
-    public Object run(String input) throws Exception {
-        SecureRandom random = new SecureRandom();
-        return random.nextLong();
+    public Object run() throws Exception {
+        return new SecureRandom().nextLong();
     }
 }

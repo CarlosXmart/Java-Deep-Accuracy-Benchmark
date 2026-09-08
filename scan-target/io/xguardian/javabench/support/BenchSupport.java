@@ -37,7 +37,9 @@ public final class BenchSupport {
 
     public static boolean allowedHost(URI uri) {
         if (uri == null || uri.getHost() == null) return false;
+        int port = uri.getPort();
         return "https".equalsIgnoreCase(uri.getScheme())
+            && (port == -1 || port == 443)
             && Set.of("api.example.test", "cdn.example.test").contains(uri.getHost().toLowerCase(Locale.ROOT));
     }
 

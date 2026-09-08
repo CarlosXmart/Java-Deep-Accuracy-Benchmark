@@ -5,8 +5,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 public class Case000153 {
-    public Object run(HttpServletResponse response, Exception failure) throws Exception {
-        response.sendError(500, "operation failed: " + failure.getMessage());
+    public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String value = request.getParameter("password");
+        response.sendError(500, "authentication failed; password=" + value);
         return null;
     }
 }
