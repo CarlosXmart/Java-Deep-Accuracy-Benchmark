@@ -6,9 +6,14 @@ import java.util.function.Function;
 
 public class Case000472 {
     public Object run(String sessionId, HttpServletResponse response) throws Exception {
+        String value = relay(sessionId);
         Cookie cookie = buildCookie(value);
         response.addCookie(cookie);
         return cookie;
+    }
+
+    private String relay(String value) {
+        return value;
     }
 
     private Cookie buildCookie(String value) {

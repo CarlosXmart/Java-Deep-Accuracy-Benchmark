@@ -10314,12 +10314,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie Secure Flag: a sensitive session cookie is added without the Secure attribute. The scored region intentionally lacks the control required by CWE-614.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000469 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000469 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000470",
@@ -10336,12 +10336,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie Secure Flag hard-negative: the sensitive session cookie has Secure=true before being added to the response. The scored condition is intentionally safe for CWE-614; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000470 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setSecure(true);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000470 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setSecure(true);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000471",
@@ -10358,12 +10358,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie Secure Flag: a sensitive session cookie is added without the Secure attribute. The scored region intentionally lacks the control required by CWE-614.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "holdout",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000471 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000471 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000472",
@@ -10380,12 +10380,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie Secure Flag hard-negative: the sensitive session cookie has Secure=true before being added to the response. The scored condition is intentionally safe for CWE-614; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000472 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setSecure(true);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000472 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setSecure(true);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000473",
@@ -10490,12 +10490,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 14,
-      "target_end_line": 16,
+      "target_start_line": 16,
+      "target_end_line": 18,
       "rationale": "Cookie Secure Flag: a sensitive session cookie is added without the Secure attribute. The scored region intentionally lacks the control required by CWE-614.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000477 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000477 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000478",
@@ -10512,12 +10512,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 15,
-      "target_end_line": 17,
+      "target_start_line": 17,
+      "target_end_line": 19,
       "rationale": "Cookie Secure Flag hard-negative: the sensitive session cookie has Secure=true before being added to the response. The scored condition is intentionally safe for CWE-614; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000478 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            cookie.setSecure(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000478 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            cookie.setSecure(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000479",
@@ -10534,12 +10534,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 14,
-      "target_end_line": 16,
+      "target_start_line": 16,
+      "target_end_line": 18,
       "rationale": "Cookie Secure Flag: a sensitive session cookie is added without the Secure attribute. The scored region intentionally lacks the control required by CWE-614.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "holdout",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000479 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000479 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000480",
@@ -10556,12 +10556,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setSecure",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 15,
-      "target_end_line": 17,
+      "target_start_line": 17,
+      "target_end_line": 19,
       "rationale": "Cookie Secure Flag hard-negative: the sensitive session cookie has Secure=true before being added to the response. The scored condition is intentionally safe for CWE-614; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000480 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            cookie.setSecure(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000480 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            cookie.setSecure(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000481",
@@ -12167,7 +12167,7 @@
       "rationale": "SSRF: the tested value reaches HttpClient / URL without the security control required for this benchmark condition.",
       "official_reference": "https://cwe.mitre.org/data/definitions/918.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000553 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        HttpRequest request = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(request, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000553 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
     },
     {
       "id": "JAV-000554",
@@ -12189,7 +12189,7 @@
       "rationale": "SSRF hard-negative: the code applies the benchmark's documented safe API, allowlist, bounded operation, secure flag, verification step, or equivalent control before/at HttpClient / URL.",
       "official_reference": "https://cwe.mitre.org/data/definitions/918.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000554 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest request = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(request, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000554 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
     },
     {
       "id": "JAV-000555",
@@ -12233,7 +12233,7 @@
       "rationale": "SSRF hard-negative: the code applies the benchmark's documented safe API, allowlist, bounded operation, secure flag, verification step, or equivalent control before/at HttpClient / URL.",
       "official_reference": "https://cwe.mitre.org/data/definitions/918.html",
       "cohort": "holdout",
-      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000556 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"q\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest request = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(request, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000556 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"q\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
     },
     {
       "id": "JAV-000557",
@@ -12514,12 +12514,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie HttpOnly Flag: a sensitive session cookie is added without the HttpOnly attribute. The scored region intentionally lacks the control required by CWE-1004.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000569 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000569 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000570",
@@ -12536,12 +12536,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie HttpOnly Flag hard-negative: the sensitive session cookie has HttpOnly=true before being added to the response. The scored condition is intentionally safe for CWE-1004; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000570 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setHttpOnly(true);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000570 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setHttpOnly(true);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000571",
@@ -12558,12 +12558,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie HttpOnly Flag: a sensitive session cookie is added without the HttpOnly attribute. The scored region intentionally lacks the control required by CWE-1004.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000571 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000571 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000572",
@@ -12580,12 +12580,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "interprocedural_configuration",
-      "target_start_line": 10,
-      "target_end_line": 12,
+      "target_start_line": 11,
+      "target_end_line": 13,
       "rationale": "Cookie HttpOnly Flag hard-negative: the sensitive session cookie has HttpOnly=true before being added to the response. The scored condition is intentionally safe for CWE-1004; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "holdout",
-      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000572 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setHttpOnly(true);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000572 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        String value = relay(sessionId);\n        Cookie cookie = buildCookie(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n\n    private Cookie buildCookie(String value) {\n        Cookie cookie = new Cookie(\"session\", value);\n        cookie.setHttpOnly(true);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000573",
@@ -12690,12 +12690,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 14,
-      "target_end_line": 16,
+      "target_start_line": 16,
+      "target_end_line": 18,
       "rationale": "Cookie HttpOnly Flag: a sensitive session cookie is added without the HttpOnly attribute. The scored region intentionally lacks the control required by CWE-1004.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000577 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000577 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000578",
@@ -12712,12 +12712,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 15,
-      "target_end_line": 17,
+      "target_start_line": 17,
+      "target_end_line": 19,
       "rationale": "Cookie HttpOnly Flag hard-negative: the sensitive session cookie has HttpOnly=true before being added to the response. The scored condition is intentionally safe for CWE-1004; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000578 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            cookie.setHttpOnly(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000578 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            cookie.setHttpOnly(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000579",
@@ -12734,12 +12734,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 14,
-      "target_end_line": 16,
+      "target_start_line": 16,
+      "target_end_line": 18,
       "rationale": "Cookie HttpOnly Flag: a sensitive session cookie is added without the HttpOnly attribute. The scored region intentionally lacks the control required by CWE-1004.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "development",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000579 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000579 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000580",
@@ -12756,12 +12756,12 @@
       "source": "method_parameter",
       "sink": "Cookie.setHttpOnly",
       "dataflow": "functional_configuration_indirection",
-      "target_start_line": 15,
-      "target_end_line": 17,
+      "target_start_line": 17,
+      "target_end_line": 19,
       "rationale": "Cookie HttpOnly Flag hard-negative: the sensitive session cookie has HttpOnly=true before being added to the response. The scored condition is intentionally safe for CWE-1004; unrelated security properties are outside this case's ground truth.",
       "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
       "cohort": "holdout",
-      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000580 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, Cookie> factory = value -> {\n            Cookie cookie = new Cookie(\"session\", value);\n            cookie.setHttpOnly(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
+      "source_code": "package io.xguardian.javabench.cases.level5;\n\nimport jakarta.servlet.http.Cookie;\nimport jakarta.servlet.http.HttpServletResponse;\nimport java.util.function.Function;\n\npublic class Case000580 {\n    public Object run(String sessionId, HttpServletResponse response) throws Exception {\n        Function<String, String> relay = value -> value;\n        String value = relay.apply(sessionId);\n        Function<String, Cookie> factory = item -> {\n            Cookie cookie = new Cookie(\"session\", item);\n            cookie.setHttpOnly(true);\n            return cookie;\n        };\n        Cookie cookie = factory.apply(value);\n        response.addCookie(cookie);\n        return cookie;\n    }\n}\n"
     },
     {
       "id": "JAV-000581",

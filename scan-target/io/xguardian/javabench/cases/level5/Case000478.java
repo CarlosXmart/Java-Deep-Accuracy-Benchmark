@@ -6,8 +6,10 @@ import java.util.function.Function;
 
 public class Case000478 {
     public Object run(String sessionId, HttpServletResponse response) throws Exception {
-        Function<String, Cookie> factory = value -> {
-            Cookie cookie = new Cookie("session", value);
+        Function<String, String> relay = value -> value;
+        String value = relay.apply(sessionId);
+        Function<String, Cookie> factory = item -> {
+            Cookie cookie = new Cookie("session", item);
             cookie.setSecure(true);
             return cookie;
         };

@@ -12,7 +12,7 @@ public class Case000556 {
         String value = request.getParameter("q");
         URI uri = URI.create(value);
         if (!BenchSupport.allowedHost(uri)) throw new SecurityException("destination not allowed");
-        HttpRequest request = HttpRequest.newBuilder(uri).GET().build();
-        return HttpClient.newHttpClient().sendAsync(request, java.net.http.HttpResponse.BodyHandlers.discarding());
+        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();
+        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());
     }
 }
