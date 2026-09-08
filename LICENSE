@@ -1,0 +1,14 @@
+Java Deep Accuracy Benchmark — Usage Notice
+
+No public license is granted by this repository.
+
+This repository is private and intended for authorized security testing,
+research, benchmarking, and internal engineering use by parties who have
+been granted access by the repository owner.
+
+External projects and documentation referenced by this repository retain
+their own respective licenses and terms. The benchmark fixtures authored
+in this repository are original and do not copy OWASP Benchmark or NIST
+Juliet source code.
+
+THE SOFTWARE AND BENCHMARK MATERIALS ARE PROVIDED WITHOUT WARRANTY.
