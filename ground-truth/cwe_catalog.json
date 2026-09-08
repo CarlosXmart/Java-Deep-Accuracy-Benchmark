@@ -1,0 +1,272 @@
+[
+  {
+    "cwe": "CWE-22",
+    "name": "Path Traversal",
+    "official_reference": "https://cwe.mitre.org/data/definitions/22.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Canonicalize and enforce base-directory containment."
+  },
+  {
+    "cwe": "CWE-78",
+    "name": "OS Command Injection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/78.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use a fixed executable and separate argument vector; avoid a command shell."
+  },
+  {
+    "cwe": "CWE-79",
+    "name": "Cross-site Scripting",
+    "official_reference": "https://cwe.mitre.org/data/definitions/79.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Apply context-appropriate HTML output encoding."
+  },
+  {
+    "cwe": "CWE-89",
+    "name": "SQL Injection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/89.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use parameterized SQL and bind values."
+  },
+  {
+    "cwe": "CWE-90",
+    "name": "LDAP Injection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/90.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use parameterized LDAP filters."
+  },
+  {
+    "cwe": "CWE-94",
+    "name": "Code Injection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/94.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Do not evaluate untrusted text as executable code."
+  },
+  {
+    "cwe": "CWE-113",
+    "name": "HTTP Response Splitting",
+    "official_reference": "https://cwe.mitre.org/data/definitions/113.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Reject CR/LF in untrusted header values."
+  },
+  {
+    "cwe": "CWE-209",
+    "name": "Sensitive Error Information",
+    "official_reference": "https://cwe.mitre.org/data/definitions/209.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Return a generic external error message."
+  },
+  {
+    "cwe": "CWE-295",
+    "name": "Certificate Validation",
+    "official_reference": "https://cwe.mitre.org/data/definitions/295.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use the platform trust store and default certificate validation."
+  },
+  {
+    "cwe": "CWE-319",
+    "name": "Cleartext Transmission",
+    "official_reference": "https://cwe.mitre.org/data/definitions/319.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use HTTPS/TLS for sensitive transport."
+  },
+  {
+    "cwe": "CWE-321",
+    "name": "Hard-coded Cryptographic Key",
+    "official_reference": "https://cwe.mitre.org/data/definitions/321.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Supply keys through a trusted runtime/key-management boundary."
+  },
+  {
+    "cwe": "CWE-327",
+    "name": "Risky Cryptographic Algorithm",
+    "official_reference": "https://cwe.mitre.org/data/definitions/327.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use a modern approved algorithm and authenticated mode."
+  },
+  {
+    "cwe": "CWE-328",
+    "name": "Weak Hash",
+    "official_reference": "https://cwe.mitre.org/data/definitions/328.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use a modern hash appropriate for the security purpose."
+  },
+  {
+    "cwe": "CWE-330",
+    "name": "Insufficient Randomness",
+    "official_reference": "https://cwe.mitre.org/data/definitions/330.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use SecureRandom for security-sensitive randomness."
+  },
+  {
+    "cwe": "CWE-347",
+    "name": "Signature Verification",
+    "official_reference": "https://cwe.mitre.org/data/definitions/347.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Enforce the boolean result of cryptographic signature verification."
+  },
+  {
+    "cwe": "CWE-352",
+    "name": "Cross-Site Request Forgery",
+    "official_reference": "https://cwe.mitre.org/data/definitions/352.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Validate an anti-CSRF token before the state change."
+  },
+  {
+    "cwe": "CWE-400",
+    "name": "Uncontrolled Resource Consumption",
+    "official_reference": "https://cwe.mitre.org/data/definitions/400.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Bound attacker-controlled resource sizes before allocation."
+  },
+  {
+    "cwe": "CWE-434",
+    "name": "Unrestricted File Upload",
+    "official_reference": "https://cwe.mitre.org/data/definitions/434.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Validate type/name and store outside web-executable locations."
+  },
+  {
+    "cwe": "CWE-470",
+    "name": "Unsafe Reflection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/470.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Map external selectors to an explicit class allowlist."
+  },
+  {
+    "cwe": "CWE-502",
+    "name": "Unsafe Deserialization",
+    "official_reference": "https://cwe.mitre.org/data/definitions/502.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Avoid native deserialization or enforce a strict object filter."
+  },
+  {
+    "cwe": "CWE-532",
+    "name": "Sensitive Data in Logs",
+    "official_reference": "https://cwe.mitre.org/data/definitions/532.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Do not log secrets or credentials."
+  },
+  {
+    "cwe": "CWE-601",
+    "name": "Open Redirect",
+    "official_reference": "https://cwe.mitre.org/data/definitions/601.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Restrict redirects to trusted relative paths or an allowlist."
+  },
+  {
+    "cwe": "CWE-611",
+    "name": "XML External Entity",
+    "official_reference": "https://cwe.mitre.org/data/definitions/611.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Disable DTDs, external entities and external resource resolution."
+  },
+  {
+    "cwe": "CWE-614",
+    "name": "Cookie without Secure",
+    "official_reference": "https://cwe.mitre.org/data/definitions/614.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Set Secure on security-sensitive HTTPS cookies."
+  },
+  {
+    "cwe": "CWE-643",
+    "name": "XPath Injection",
+    "official_reference": "https://cwe.mitre.org/data/definitions/643.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use XPath variables instead of string concatenation."
+  },
+  {
+    "cwe": "CWE-798",
+    "name": "Hard-coded Credentials",
+    "official_reference": "https://cwe.mitre.org/data/definitions/798.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Load credentials from an approved secret source."
+  },
+  {
+    "cwe": "CWE-862",
+    "name": "Missing Authorization",
+    "official_reference": "https://cwe.mitre.org/data/definitions/862.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Enforce authorization before the sensitive operation."
+  },
+  {
+    "cwe": "CWE-918",
+    "name": "Server-Side Request Forgery",
+    "official_reference": "https://cwe.mitre.org/data/definitions/918.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Enforce destination scheme/host/port allowlists."
+  },
+  {
+    "cwe": "CWE-1004",
+    "name": "Cookie without HttpOnly",
+    "official_reference": "https://cwe.mitre.org/data/definitions/1004.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Set HttpOnly on sensitive cookies."
+  },
+  {
+    "cwe": "CWE-1333",
+    "name": "Inefficient Regular Expression",
+    "official_reference": "https://cwe.mitre.org/data/definitions/1333.html",
+    "cases": 20,
+    "vulnerable": 10,
+    "safe": 10,
+    "safe_control": "Use a linear-time regular expression or constrain the input."
+  }
+]

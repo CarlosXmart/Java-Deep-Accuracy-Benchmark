@@ -1,0 +1,601 @@
+id,pair_id,path,expected_vulnerable,preferred_cwe,category,difficulty,set,variant,start_line,end_line
+JDB-000001,CWE-22-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000001.java,true,CWE-22,Path Traversal,1,calibration,A,12,14
+JDB-000002,CWE-22-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000002.java,false,CWE-22,Path Traversal,1,calibration,A,12,15
+JDB-000003,CWE-22-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000003.java,true,CWE-22,Path Traversal,1,calibration,B,13,15
+JDB-000004,CWE-22-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000004.java,false,CWE-22,Path Traversal,1,calibration,B,13,16
+JDB-000005,CWE-22-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000005.java,true,CWE-22,Path Traversal,2,calibration,A,13,15
+JDB-000006,CWE-22-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000006.java,false,CWE-22,Path Traversal,2,calibration,A,13,16
+JDB-000007,CWE-22-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000007.java,true,CWE-22,Path Traversal,2,calibration,B,14,16
+JDB-000008,CWE-22-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000008.java,false,CWE-22,Path Traversal,2,calibration,B,14,17
+JDB-000009,CWE-22-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000009.java,true,CWE-22,Path Traversal,3,calibration,A,12,14
+JDB-000010,CWE-22-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000010.java,false,CWE-22,Path Traversal,3,calibration,A,12,15
+JDB-000011,CWE-22-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000011.java,true,CWE-22,Path Traversal,3,holdout,B,13,15
+JDB-000012,CWE-22-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000012.java,false,CWE-22,Path Traversal,3,holdout,B,13,16
+JDB-000013,CWE-22-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000013.java,true,CWE-22,Path Traversal,4,calibration,A,12,14
+JDB-000014,CWE-22-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000014.java,false,CWE-22,Path Traversal,4,calibration,A,12,15
+JDB-000015,CWE-22-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000015.java,true,CWE-22,Path Traversal,4,holdout,B,13,15
+JDB-000016,CWE-22-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000016.java,false,CWE-22,Path Traversal,4,holdout,B,13,16
+JDB-000017,CWE-22-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000017.java,true,CWE-22,Path Traversal,5,calibration,A,12,14
+JDB-000018,CWE-22-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000018.java,false,CWE-22,Path Traversal,5,calibration,A,12,15
+JDB-000019,CWE-22-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000019.java,true,CWE-22,Path Traversal,5,holdout,B,13,15
+JDB-000020,CWE-22-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000020.java,false,CWE-22,Path Traversal,5,holdout,B,13,16
+JDB-000021,CWE-78-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000021.java,true,CWE-78,OS Command Injection,1,calibration,A,9,9
+JDB-000022,CWE-78-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000022.java,false,CWE-78,OS Command Injection,1,calibration,A,9,9
+JDB-000023,CWE-78-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000023.java,true,CWE-78,OS Command Injection,1,calibration,B,10,10
+JDB-000024,CWE-78-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000024.java,false,CWE-78,OS Command Injection,1,calibration,B,10,10
+JDB-000025,CWE-78-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000025.java,true,CWE-78,OS Command Injection,2,calibration,A,10,10
+JDB-000026,CWE-78-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000026.java,false,CWE-78,OS Command Injection,2,calibration,A,10,10
+JDB-000027,CWE-78-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000027.java,true,CWE-78,OS Command Injection,2,calibration,B,11,11
+JDB-000028,CWE-78-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000028.java,false,CWE-78,OS Command Injection,2,calibration,B,11,11
+JDB-000029,CWE-78-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000029.java,true,CWE-78,OS Command Injection,3,calibration,A,9,9
+JDB-000030,CWE-78-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000030.java,false,CWE-78,OS Command Injection,3,calibration,A,9,9
+JDB-000031,CWE-78-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000031.java,true,CWE-78,OS Command Injection,3,holdout,B,10,10
+JDB-000032,CWE-78-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000032.java,false,CWE-78,OS Command Injection,3,holdout,B,10,10
+JDB-000033,CWE-78-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000033.java,true,CWE-78,OS Command Injection,4,calibration,A,9,9
+JDB-000034,CWE-78-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000034.java,false,CWE-78,OS Command Injection,4,calibration,A,9,9
+JDB-000035,CWE-78-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000035.java,true,CWE-78,OS Command Injection,4,holdout,B,10,10
+JDB-000036,CWE-78-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000036.java,false,CWE-78,OS Command Injection,4,holdout,B,10,10
+JDB-000037,CWE-78-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000037.java,true,CWE-78,OS Command Injection,5,calibration,A,9,9
+JDB-000038,CWE-78-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000038.java,false,CWE-78,OS Command Injection,5,calibration,A,9,9
+JDB-000039,CWE-78-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000039.java,true,CWE-78,OS Command Injection,5,holdout,B,10,10
+JDB-000040,CWE-78-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000040.java,false,CWE-78,OS Command Injection,5,holdout,B,10,10
+JDB-000041,CWE-79-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000041.java,true,CWE-79,Cross-site Scripting,1,calibration,A,11,12
+JDB-000042,CWE-79-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000042.java,false,CWE-79,Cross-site Scripting,1,calibration,A,11,12
+JDB-000043,CWE-79-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000043.java,true,CWE-79,Cross-site Scripting,1,calibration,B,12,13
+JDB-000044,CWE-79-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000044.java,false,CWE-79,Cross-site Scripting,1,calibration,B,12,13
+JDB-000045,CWE-79-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000045.java,true,CWE-79,Cross-site Scripting,2,calibration,A,12,13
+JDB-000046,CWE-79-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000046.java,false,CWE-79,Cross-site Scripting,2,calibration,A,12,13
+JDB-000047,CWE-79-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000047.java,true,CWE-79,Cross-site Scripting,2,calibration,B,13,14
+JDB-000048,CWE-79-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000048.java,false,CWE-79,Cross-site Scripting,2,calibration,B,13,14
+JDB-000049,CWE-79-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000049.java,true,CWE-79,Cross-site Scripting,3,calibration,A,11,12
+JDB-000050,CWE-79-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000050.java,false,CWE-79,Cross-site Scripting,3,calibration,A,11,12
+JDB-000051,CWE-79-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000051.java,true,CWE-79,Cross-site Scripting,3,holdout,B,12,13
+JDB-000052,CWE-79-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000052.java,false,CWE-79,Cross-site Scripting,3,holdout,B,12,13
+JDB-000053,CWE-79-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000053.java,true,CWE-79,Cross-site Scripting,4,calibration,A,11,12
+JDB-000054,CWE-79-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000054.java,false,CWE-79,Cross-site Scripting,4,calibration,A,11,12
+JDB-000055,CWE-79-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000055.java,true,CWE-79,Cross-site Scripting,4,holdout,B,12,13
+JDB-000056,CWE-79-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000056.java,false,CWE-79,Cross-site Scripting,4,holdout,B,12,13
+JDB-000057,CWE-79-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000057.java,true,CWE-79,Cross-site Scripting,5,calibration,A,11,12
+JDB-000058,CWE-79-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000058.java,false,CWE-79,Cross-site Scripting,5,calibration,A,11,12
+JDB-000059,CWE-79-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000059.java,true,CWE-79,Cross-site Scripting,5,holdout,B,12,13
+JDB-000060,CWE-79-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000060.java,false,CWE-79,Cross-site Scripting,5,holdout,B,12,13
+JDB-000061,CWE-89-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000061.java,true,CWE-89,SQL Injection,1,calibration,A,9,10
+JDB-000062,CWE-89-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000062.java,false,CWE-89,SQL Injection,1,calibration,A,9,11
+JDB-000063,CWE-89-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000063.java,true,CWE-89,SQL Injection,1,calibration,B,10,11
+JDB-000064,CWE-89-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000064.java,false,CWE-89,SQL Injection,1,calibration,B,10,12
+JDB-000065,CWE-89-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000065.java,true,CWE-89,SQL Injection,2,calibration,A,10,11
+JDB-000066,CWE-89-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000066.java,false,CWE-89,SQL Injection,2,calibration,A,10,12
+JDB-000067,CWE-89-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000067.java,true,CWE-89,SQL Injection,2,calibration,B,11,12
+JDB-000068,CWE-89-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000068.java,false,CWE-89,SQL Injection,2,calibration,B,11,13
+JDB-000069,CWE-89-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000069.java,true,CWE-89,SQL Injection,3,calibration,A,9,10
+JDB-000070,CWE-89-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000070.java,false,CWE-89,SQL Injection,3,calibration,A,9,11
+JDB-000071,CWE-89-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000071.java,true,CWE-89,SQL Injection,3,holdout,B,10,11
+JDB-000072,CWE-89-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000072.java,false,CWE-89,SQL Injection,3,holdout,B,10,12
+JDB-000073,CWE-89-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000073.java,true,CWE-89,SQL Injection,4,calibration,A,9,10
+JDB-000074,CWE-89-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000074.java,false,CWE-89,SQL Injection,4,calibration,A,9,11
+JDB-000075,CWE-89-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000075.java,true,CWE-89,SQL Injection,4,holdout,B,10,11
+JDB-000076,CWE-89-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000076.java,false,CWE-89,SQL Injection,4,holdout,B,10,12
+JDB-000077,CWE-89-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000077.java,true,CWE-89,SQL Injection,5,calibration,A,9,10
+JDB-000078,CWE-89-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000078.java,false,CWE-89,SQL Injection,5,calibration,A,9,11
+JDB-000079,CWE-89-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000079.java,true,CWE-89,SQL Injection,5,holdout,B,10,11
+JDB-000080,CWE-89-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000080.java,false,CWE-89,SQL Injection,5,holdout,B,10,12
+JDB-000081,CWE-90-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000081.java,true,CWE-90,LDAP Injection,1,calibration,A,9,10
+JDB-000082,CWE-90-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000082.java,false,CWE-90,LDAP Injection,1,calibration,A,9,10
+JDB-000083,CWE-90-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000083.java,true,CWE-90,LDAP Injection,1,calibration,B,10,11
+JDB-000084,CWE-90-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000084.java,false,CWE-90,LDAP Injection,1,calibration,B,10,11
+JDB-000085,CWE-90-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000085.java,true,CWE-90,LDAP Injection,2,calibration,A,10,11
+JDB-000086,CWE-90-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000086.java,false,CWE-90,LDAP Injection,2,calibration,A,10,11
+JDB-000087,CWE-90-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000087.java,true,CWE-90,LDAP Injection,2,calibration,B,11,12
+JDB-000088,CWE-90-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000088.java,false,CWE-90,LDAP Injection,2,calibration,B,11,12
+JDB-000089,CWE-90-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000089.java,true,CWE-90,LDAP Injection,3,calibration,A,9,10
+JDB-000090,CWE-90-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000090.java,false,CWE-90,LDAP Injection,3,calibration,A,9,10
+JDB-000091,CWE-90-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000091.java,true,CWE-90,LDAP Injection,3,holdout,B,10,11
+JDB-000092,CWE-90-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000092.java,false,CWE-90,LDAP Injection,3,holdout,B,10,11
+JDB-000093,CWE-90-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000093.java,true,CWE-90,LDAP Injection,4,calibration,A,9,10
+JDB-000094,CWE-90-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000094.java,false,CWE-90,LDAP Injection,4,calibration,A,9,10
+JDB-000095,CWE-90-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000095.java,true,CWE-90,LDAP Injection,4,holdout,B,10,11
+JDB-000096,CWE-90-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000096.java,false,CWE-90,LDAP Injection,4,holdout,B,10,11
+JDB-000097,CWE-90-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000097.java,true,CWE-90,LDAP Injection,5,calibration,A,9,10
+JDB-000098,CWE-90-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000098.java,false,CWE-90,LDAP Injection,5,calibration,A,9,10
+JDB-000099,CWE-90-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000099.java,true,CWE-90,LDAP Injection,5,holdout,B,10,11
+JDB-000100,CWE-90-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000100.java,false,CWE-90,LDAP Injection,5,holdout,B,10,11
+JDB-000101,CWE-94-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000101.java,true,CWE-94,Code Injection,1,calibration,A,9,10
+JDB-000102,CWE-94-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000102.java,false,CWE-94,Code Injection,1,calibration,A,9,9
+JDB-000103,CWE-94-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000103.java,true,CWE-94,Code Injection,1,calibration,B,10,11
+JDB-000104,CWE-94-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000104.java,false,CWE-94,Code Injection,1,calibration,B,10,10
+JDB-000105,CWE-94-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000105.java,true,CWE-94,Code Injection,2,calibration,A,10,11
+JDB-000106,CWE-94-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000106.java,false,CWE-94,Code Injection,2,calibration,A,10,10
+JDB-000107,CWE-94-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000107.java,true,CWE-94,Code Injection,2,calibration,B,11,12
+JDB-000108,CWE-94-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000108.java,false,CWE-94,Code Injection,2,calibration,B,11,11
+JDB-000109,CWE-94-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000109.java,true,CWE-94,Code Injection,3,calibration,A,9,10
+JDB-000110,CWE-94-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000110.java,false,CWE-94,Code Injection,3,calibration,A,9,9
+JDB-000111,CWE-94-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000111.java,true,CWE-94,Code Injection,3,holdout,B,10,11
+JDB-000112,CWE-94-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000112.java,false,CWE-94,Code Injection,3,holdout,B,10,10
+JDB-000113,CWE-94-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000113.java,true,CWE-94,Code Injection,4,calibration,A,9,10
+JDB-000114,CWE-94-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000114.java,false,CWE-94,Code Injection,4,calibration,A,9,9
+JDB-000115,CWE-94-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000115.java,true,CWE-94,Code Injection,4,holdout,B,10,11
+JDB-000116,CWE-94-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000116.java,false,CWE-94,Code Injection,4,holdout,B,10,10
+JDB-000117,CWE-94-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000117.java,true,CWE-94,Code Injection,5,calibration,A,9,10
+JDB-000118,CWE-94-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000118.java,false,CWE-94,Code Injection,5,calibration,A,9,9
+JDB-000119,CWE-94-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000119.java,true,CWE-94,Code Injection,5,holdout,B,10,11
+JDB-000120,CWE-94-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000120.java,false,CWE-94,Code Injection,5,holdout,B,10,10
+JDB-000121,CWE-113-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000121.java,true,CWE-113,HTTP Response Splitting,1,calibration,A,9,10
+JDB-000122,CWE-113-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000122.java,false,CWE-113,HTTP Response Splitting,1,calibration,A,9,11
+JDB-000123,CWE-113-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000123.java,true,CWE-113,HTTP Response Splitting,1,calibration,B,10,11
+JDB-000124,CWE-113-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000124.java,false,CWE-113,HTTP Response Splitting,1,calibration,B,10,12
+JDB-000125,CWE-113-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000125.java,true,CWE-113,HTTP Response Splitting,2,calibration,A,10,11
+JDB-000126,CWE-113-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000126.java,false,CWE-113,HTTP Response Splitting,2,calibration,A,10,12
+JDB-000127,CWE-113-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000127.java,true,CWE-113,HTTP Response Splitting,2,calibration,B,11,12
+JDB-000128,CWE-113-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000128.java,false,CWE-113,HTTP Response Splitting,2,calibration,B,11,13
+JDB-000129,CWE-113-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000129.java,true,CWE-113,HTTP Response Splitting,3,calibration,A,9,10
+JDB-000130,CWE-113-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000130.java,false,CWE-113,HTTP Response Splitting,3,calibration,A,9,11
+JDB-000131,CWE-113-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000131.java,true,CWE-113,HTTP Response Splitting,3,holdout,B,10,11
+JDB-000132,CWE-113-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000132.java,false,CWE-113,HTTP Response Splitting,3,holdout,B,10,12
+JDB-000133,CWE-113-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000133.java,true,CWE-113,HTTP Response Splitting,4,calibration,A,9,10
+JDB-000134,CWE-113-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000134.java,false,CWE-113,HTTP Response Splitting,4,calibration,A,9,11
+JDB-000135,CWE-113-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000135.java,true,CWE-113,HTTP Response Splitting,4,holdout,B,10,11
+JDB-000136,CWE-113-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000136.java,false,CWE-113,HTTP Response Splitting,4,holdout,B,10,12
+JDB-000137,CWE-113-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000137.java,true,CWE-113,HTTP Response Splitting,5,calibration,A,9,10
+JDB-000138,CWE-113-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000138.java,false,CWE-113,HTTP Response Splitting,5,calibration,A,9,11
+JDB-000139,CWE-113-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000139.java,true,CWE-113,HTTP Response Splitting,5,holdout,B,10,11
+JDB-000140,CWE-113-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000140.java,false,CWE-113,HTTP Response Splitting,5,holdout,B,10,12
+JDB-000141,CWE-209-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000141.java,true,CWE-209,Sensitive Error Information,1,calibration,A,9,9
+JDB-000142,CWE-209-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000142.java,false,CWE-209,Sensitive Error Information,1,calibration,A,9,9
+JDB-000143,CWE-209-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000143.java,true,CWE-209,Sensitive Error Information,1,calibration,B,10,10
+JDB-000144,CWE-209-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000144.java,false,CWE-209,Sensitive Error Information,1,calibration,B,10,10
+JDB-000145,CWE-209-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000145.java,true,CWE-209,Sensitive Error Information,2,calibration,A,10,10
+JDB-000146,CWE-209-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000146.java,false,CWE-209,Sensitive Error Information,2,calibration,A,10,10
+JDB-000147,CWE-209-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000147.java,true,CWE-209,Sensitive Error Information,2,calibration,B,11,11
+JDB-000148,CWE-209-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000148.java,false,CWE-209,Sensitive Error Information,2,calibration,B,11,11
+JDB-000149,CWE-209-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000149.java,true,CWE-209,Sensitive Error Information,3,calibration,A,9,9
+JDB-000150,CWE-209-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000150.java,false,CWE-209,Sensitive Error Information,3,calibration,A,9,9
+JDB-000151,CWE-209-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000151.java,true,CWE-209,Sensitive Error Information,3,holdout,B,10,10
+JDB-000152,CWE-209-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000152.java,false,CWE-209,Sensitive Error Information,3,holdout,B,10,10
+JDB-000153,CWE-209-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000153.java,true,CWE-209,Sensitive Error Information,4,calibration,A,9,9
+JDB-000154,CWE-209-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000154.java,false,CWE-209,Sensitive Error Information,4,calibration,A,9,9
+JDB-000155,CWE-209-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000155.java,true,CWE-209,Sensitive Error Information,4,holdout,B,10,10
+JDB-000156,CWE-209-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000156.java,false,CWE-209,Sensitive Error Information,4,holdout,B,10,10
+JDB-000157,CWE-209-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000157.java,true,CWE-209,Sensitive Error Information,5,calibration,A,9,9
+JDB-000158,CWE-209-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000158.java,false,CWE-209,Sensitive Error Information,5,calibration,A,9,9
+JDB-000159,CWE-209-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000159.java,true,CWE-209,Sensitive Error Information,5,holdout,B,10,10
+JDB-000160,CWE-209-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000160.java,false,CWE-209,Sensitive Error Information,5,holdout,B,10,10
+JDB-000161,CWE-295-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000161.java,true,CWE-295,Certificate Validation,1,calibration,A,9,16
+JDB-000162,CWE-295-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000162.java,false,CWE-295,Certificate Validation,1,calibration,A,9,10
+JDB-000163,CWE-295-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000163.java,true,CWE-295,Certificate Validation,1,calibration,B,10,17
+JDB-000164,CWE-295-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000164.java,false,CWE-295,Certificate Validation,1,calibration,B,10,11
+JDB-000165,CWE-295-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000165.java,true,CWE-295,Certificate Validation,2,calibration,A,10,17
+JDB-000166,CWE-295-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000166.java,false,CWE-295,Certificate Validation,2,calibration,A,10,11
+JDB-000167,CWE-295-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000167.java,true,CWE-295,Certificate Validation,2,calibration,B,11,18
+JDB-000168,CWE-295-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000168.java,false,CWE-295,Certificate Validation,2,calibration,B,11,12
+JDB-000169,CWE-295-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000169.java,true,CWE-295,Certificate Validation,3,calibration,A,9,16
+JDB-000170,CWE-295-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000170.java,false,CWE-295,Certificate Validation,3,calibration,A,9,10
+JDB-000171,CWE-295-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000171.java,true,CWE-295,Certificate Validation,3,holdout,B,10,17
+JDB-000172,CWE-295-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000172.java,false,CWE-295,Certificate Validation,3,holdout,B,10,11
+JDB-000173,CWE-295-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000173.java,true,CWE-295,Certificate Validation,4,calibration,A,9,16
+JDB-000174,CWE-295-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000174.java,false,CWE-295,Certificate Validation,4,calibration,A,9,10
+JDB-000175,CWE-295-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000175.java,true,CWE-295,Certificate Validation,4,holdout,B,10,17
+JDB-000176,CWE-295-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000176.java,false,CWE-295,Certificate Validation,4,holdout,B,10,11
+JDB-000177,CWE-295-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000177.java,true,CWE-295,Certificate Validation,5,calibration,A,9,16
+JDB-000178,CWE-295-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000178.java,false,CWE-295,Certificate Validation,5,calibration,A,9,10
+JDB-000179,CWE-295-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000179.java,true,CWE-295,Certificate Validation,5,holdout,B,10,17
+JDB-000180,CWE-295-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000180.java,false,CWE-295,Certificate Validation,5,holdout,B,10,11
+JDB-000181,CWE-319-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000181.java,true,CWE-319,Cleartext Transmission,1,calibration,A,9,10
+JDB-000182,CWE-319-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000182.java,false,CWE-319,Cleartext Transmission,1,calibration,A,9,10
+JDB-000183,CWE-319-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000183.java,true,CWE-319,Cleartext Transmission,1,calibration,B,10,11
+JDB-000184,CWE-319-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000184.java,false,CWE-319,Cleartext Transmission,1,calibration,B,10,11
+JDB-000185,CWE-319-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000185.java,true,CWE-319,Cleartext Transmission,2,calibration,A,10,11
+JDB-000186,CWE-319-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000186.java,false,CWE-319,Cleartext Transmission,2,calibration,A,10,11
+JDB-000187,CWE-319-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000187.java,true,CWE-319,Cleartext Transmission,2,calibration,B,11,12
+JDB-000188,CWE-319-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000188.java,false,CWE-319,Cleartext Transmission,2,calibration,B,11,12
+JDB-000189,CWE-319-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000189.java,true,CWE-319,Cleartext Transmission,3,calibration,A,9,10
+JDB-000190,CWE-319-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000190.java,false,CWE-319,Cleartext Transmission,3,calibration,A,9,10
+JDB-000191,CWE-319-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000191.java,true,CWE-319,Cleartext Transmission,3,holdout,B,10,11
+JDB-000192,CWE-319-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000192.java,false,CWE-319,Cleartext Transmission,3,holdout,B,10,11
+JDB-000193,CWE-319-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000193.java,true,CWE-319,Cleartext Transmission,4,calibration,A,9,10
+JDB-000194,CWE-319-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000194.java,false,CWE-319,Cleartext Transmission,4,calibration,A,9,10
+JDB-000195,CWE-319-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000195.java,true,CWE-319,Cleartext Transmission,4,holdout,B,10,11
+JDB-000196,CWE-319-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000196.java,false,CWE-319,Cleartext Transmission,4,holdout,B,10,11
+JDB-000197,CWE-319-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000197.java,true,CWE-319,Cleartext Transmission,5,calibration,A,9,10
+JDB-000198,CWE-319-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000198.java,false,CWE-319,Cleartext Transmission,5,calibration,A,9,10
+JDB-000199,CWE-319-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000199.java,true,CWE-319,Cleartext Transmission,5,holdout,B,10,11
+JDB-000200,CWE-319-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000200.java,false,CWE-319,Cleartext Transmission,5,holdout,B,10,11
+JDB-000201,CWE-321-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000201.java,true,CWE-321,Hard-coded Cryptographic Key,1,calibration,A,9,13
+JDB-000202,CWE-321-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000202.java,false,CWE-321,Hard-coded Cryptographic Key,1,calibration,A,9,13
+JDB-000203,CWE-321-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000203.java,true,CWE-321,Hard-coded Cryptographic Key,1,calibration,B,9,13
+JDB-000204,CWE-321-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000204.java,false,CWE-321,Hard-coded Cryptographic Key,1,calibration,B,9,13
+JDB-000205,CWE-321-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000205.java,true,CWE-321,Hard-coded Cryptographic Key,2,calibration,A,10,14
+JDB-000206,CWE-321-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000206.java,false,CWE-321,Hard-coded Cryptographic Key,2,calibration,A,10,14
+JDB-000207,CWE-321-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000207.java,true,CWE-321,Hard-coded Cryptographic Key,2,calibration,B,10,14
+JDB-000208,CWE-321-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000208.java,false,CWE-321,Hard-coded Cryptographic Key,2,calibration,B,10,14
+JDB-000209,CWE-321-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000209.java,true,CWE-321,Hard-coded Cryptographic Key,3,calibration,A,9,13
+JDB-000210,CWE-321-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000210.java,false,CWE-321,Hard-coded Cryptographic Key,3,calibration,A,9,13
+JDB-000211,CWE-321-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000211.java,true,CWE-321,Hard-coded Cryptographic Key,3,holdout,B,9,13
+JDB-000212,CWE-321-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000212.java,false,CWE-321,Hard-coded Cryptographic Key,3,holdout,B,9,13
+JDB-000213,CWE-321-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000213.java,true,CWE-321,Hard-coded Cryptographic Key,4,calibration,A,9,13
+JDB-000214,CWE-321-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000214.java,false,CWE-321,Hard-coded Cryptographic Key,4,calibration,A,9,13
+JDB-000215,CWE-321-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000215.java,true,CWE-321,Hard-coded Cryptographic Key,4,holdout,B,9,13
+JDB-000216,CWE-321-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000216.java,false,CWE-321,Hard-coded Cryptographic Key,4,holdout,B,9,13
+JDB-000217,CWE-321-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000217.java,true,CWE-321,Hard-coded Cryptographic Key,5,calibration,A,9,13
+JDB-000218,CWE-321-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000218.java,false,CWE-321,Hard-coded Cryptographic Key,5,calibration,A,9,13
+JDB-000219,CWE-321-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000219.java,true,CWE-321,Hard-coded Cryptographic Key,5,holdout,B,9,13
+JDB-000220,CWE-321-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000220.java,false,CWE-321,Hard-coded Cryptographic Key,5,holdout,B,9,13
+JDB-000221,CWE-327-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000221.java,true,CWE-327,Risky Cryptographic Algorithm,1,calibration,A,9,13
+JDB-000222,CWE-327-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000222.java,false,CWE-327,Risky Cryptographic Algorithm,1,calibration,A,9,14
+JDB-000223,CWE-327-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000223.java,true,CWE-327,Risky Cryptographic Algorithm,1,calibration,B,10,14
+JDB-000224,CWE-327-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000224.java,false,CWE-327,Risky Cryptographic Algorithm,1,calibration,B,10,15
+JDB-000225,CWE-327-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000225.java,true,CWE-327,Risky Cryptographic Algorithm,2,calibration,A,10,14
+JDB-000226,CWE-327-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000226.java,false,CWE-327,Risky Cryptographic Algorithm,2,calibration,A,10,15
+JDB-000227,CWE-327-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000227.java,true,CWE-327,Risky Cryptographic Algorithm,2,calibration,B,11,15
+JDB-000228,CWE-327-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000228.java,false,CWE-327,Risky Cryptographic Algorithm,2,calibration,B,11,16
+JDB-000229,CWE-327-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000229.java,true,CWE-327,Risky Cryptographic Algorithm,3,calibration,A,9,13
+JDB-000230,CWE-327-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000230.java,false,CWE-327,Risky Cryptographic Algorithm,3,calibration,A,9,14
+JDB-000231,CWE-327-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000231.java,true,CWE-327,Risky Cryptographic Algorithm,3,holdout,B,10,14
+JDB-000232,CWE-327-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000232.java,false,CWE-327,Risky Cryptographic Algorithm,3,holdout,B,10,15
+JDB-000233,CWE-327-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000233.java,true,CWE-327,Risky Cryptographic Algorithm,4,calibration,A,9,13
+JDB-000234,CWE-327-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000234.java,false,CWE-327,Risky Cryptographic Algorithm,4,calibration,A,9,14
+JDB-000235,CWE-327-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000235.java,true,CWE-327,Risky Cryptographic Algorithm,4,holdout,B,10,14
+JDB-000236,CWE-327-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000236.java,false,CWE-327,Risky Cryptographic Algorithm,4,holdout,B,10,15
+JDB-000237,CWE-327-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000237.java,true,CWE-327,Risky Cryptographic Algorithm,5,calibration,A,9,13
+JDB-000238,CWE-327-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000238.java,false,CWE-327,Risky Cryptographic Algorithm,5,calibration,A,9,14
+JDB-000239,CWE-327-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000239.java,true,CWE-327,Risky Cryptographic Algorithm,5,holdout,B,10,14
+JDB-000240,CWE-327-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000240.java,false,CWE-327,Risky Cryptographic Algorithm,5,holdout,B,10,15
+JDB-000241,CWE-328-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000241.java,true,CWE-328,Weak Hash,1,calibration,A,9,10
+JDB-000242,CWE-328-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000242.java,false,CWE-328,Weak Hash,1,calibration,A,9,10
+JDB-000243,CWE-328-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000243.java,true,CWE-328,Weak Hash,1,calibration,B,10,11
+JDB-000244,CWE-328-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000244.java,false,CWE-328,Weak Hash,1,calibration,B,10,11
+JDB-000245,CWE-328-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000245.java,true,CWE-328,Weak Hash,2,calibration,A,10,11
+JDB-000246,CWE-328-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000246.java,false,CWE-328,Weak Hash,2,calibration,A,10,11
+JDB-000247,CWE-328-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000247.java,true,CWE-328,Weak Hash,2,calibration,B,11,12
+JDB-000248,CWE-328-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000248.java,false,CWE-328,Weak Hash,2,calibration,B,11,12
+JDB-000249,CWE-328-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000249.java,true,CWE-328,Weak Hash,3,calibration,A,9,10
+JDB-000250,CWE-328-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000250.java,false,CWE-328,Weak Hash,3,calibration,A,9,10
+JDB-000251,CWE-328-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000251.java,true,CWE-328,Weak Hash,3,holdout,B,10,11
+JDB-000252,CWE-328-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000252.java,false,CWE-328,Weak Hash,3,holdout,B,10,11
+JDB-000253,CWE-328-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000253.java,true,CWE-328,Weak Hash,4,calibration,A,9,10
+JDB-000254,CWE-328-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000254.java,false,CWE-328,Weak Hash,4,calibration,A,9,10
+JDB-000255,CWE-328-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000255.java,true,CWE-328,Weak Hash,4,holdout,B,10,11
+JDB-000256,CWE-328-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000256.java,false,CWE-328,Weak Hash,4,holdout,B,10,11
+JDB-000257,CWE-328-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000257.java,true,CWE-328,Weak Hash,5,calibration,A,9,10
+JDB-000258,CWE-328-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000258.java,false,CWE-328,Weak Hash,5,calibration,A,9,10
+JDB-000259,CWE-328-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000259.java,true,CWE-328,Weak Hash,5,holdout,B,10,11
+JDB-000260,CWE-328-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000260.java,false,CWE-328,Weak Hash,5,holdout,B,10,11
+JDB-000261,CWE-330-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000261.java,true,CWE-330,Insufficient Randomness,1,calibration,A,9,10
+JDB-000262,CWE-330-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000262.java,false,CWE-330,Insufficient Randomness,1,calibration,A,9,10
+JDB-000263,CWE-330-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000263.java,true,CWE-330,Insufficient Randomness,1,calibration,B,10,11
+JDB-000264,CWE-330-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000264.java,false,CWE-330,Insufficient Randomness,1,calibration,B,10,11
+JDB-000265,CWE-330-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000265.java,true,CWE-330,Insufficient Randomness,2,calibration,A,10,11
+JDB-000266,CWE-330-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000266.java,false,CWE-330,Insufficient Randomness,2,calibration,A,10,11
+JDB-000267,CWE-330-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000267.java,true,CWE-330,Insufficient Randomness,2,calibration,B,11,12
+JDB-000268,CWE-330-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000268.java,false,CWE-330,Insufficient Randomness,2,calibration,B,11,12
+JDB-000269,CWE-330-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000269.java,true,CWE-330,Insufficient Randomness,3,calibration,A,9,10
+JDB-000270,CWE-330-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000270.java,false,CWE-330,Insufficient Randomness,3,calibration,A,9,10
+JDB-000271,CWE-330-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000271.java,true,CWE-330,Insufficient Randomness,3,holdout,B,10,11
+JDB-000272,CWE-330-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000272.java,false,CWE-330,Insufficient Randomness,3,holdout,B,10,11
+JDB-000273,CWE-330-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000273.java,true,CWE-330,Insufficient Randomness,4,calibration,A,9,10
+JDB-000274,CWE-330-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000274.java,false,CWE-330,Insufficient Randomness,4,calibration,A,9,10
+JDB-000275,CWE-330-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000275.java,true,CWE-330,Insufficient Randomness,4,holdout,B,10,11
+JDB-000276,CWE-330-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000276.java,false,CWE-330,Insufficient Randomness,4,holdout,B,10,11
+JDB-000277,CWE-330-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000277.java,true,CWE-330,Insufficient Randomness,5,calibration,A,9,10
+JDB-000278,CWE-330-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000278.java,false,CWE-330,Insufficient Randomness,5,calibration,A,9,10
+JDB-000279,CWE-330-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000279.java,true,CWE-330,Insufficient Randomness,5,holdout,B,10,11
+JDB-000280,CWE-330-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000280.java,false,CWE-330,Insufficient Randomness,5,holdout,B,10,11
+JDB-000281,CWE-347-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000281.java,true,CWE-347,Signature Verification,1,calibration,A,9,13
+JDB-000282,CWE-347-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000282.java,false,CWE-347,Signature Verification,1,calibration,A,9,12
+JDB-000283,CWE-347-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000283.java,true,CWE-347,Signature Verification,1,calibration,B,10,14
+JDB-000284,CWE-347-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000284.java,false,CWE-347,Signature Verification,1,calibration,B,10,13
+JDB-000285,CWE-347-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000285.java,true,CWE-347,Signature Verification,2,calibration,A,10,14
+JDB-000286,CWE-347-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000286.java,false,CWE-347,Signature Verification,2,calibration,A,10,13
+JDB-000287,CWE-347-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000287.java,true,CWE-347,Signature Verification,2,calibration,B,11,15
+JDB-000288,CWE-347-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000288.java,false,CWE-347,Signature Verification,2,calibration,B,11,14
+JDB-000289,CWE-347-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000289.java,true,CWE-347,Signature Verification,3,calibration,A,9,13
+JDB-000290,CWE-347-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000290.java,false,CWE-347,Signature Verification,3,calibration,A,9,12
+JDB-000291,CWE-347-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000291.java,true,CWE-347,Signature Verification,3,holdout,B,10,14
+JDB-000292,CWE-347-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000292.java,false,CWE-347,Signature Verification,3,holdout,B,10,13
+JDB-000293,CWE-347-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000293.java,true,CWE-347,Signature Verification,4,calibration,A,9,13
+JDB-000294,CWE-347-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000294.java,false,CWE-347,Signature Verification,4,calibration,A,9,12
+JDB-000295,CWE-347-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000295.java,true,CWE-347,Signature Verification,4,holdout,B,10,14
+JDB-000296,CWE-347-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000296.java,false,CWE-347,Signature Verification,4,holdout,B,10,13
+JDB-000297,CWE-347-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000297.java,true,CWE-347,Signature Verification,5,calibration,A,9,13
+JDB-000298,CWE-347-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000298.java,false,CWE-347,Signature Verification,5,calibration,A,9,12
+JDB-000299,CWE-347-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000299.java,true,CWE-347,Signature Verification,5,holdout,B,10,14
+JDB-000300,CWE-347-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000300.java,false,CWE-347,Signature Verification,5,holdout,B,10,13
+JDB-000301,CWE-352-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000301.java,true,CWE-352,Cross-Site Request Forgery,1,calibration,A,9,11
+JDB-000302,CWE-352-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000302.java,false,CWE-352,Cross-Site Request Forgery,1,calibration,A,9,15
+JDB-000303,CWE-352-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000303.java,true,CWE-352,Cross-Site Request Forgery,1,calibration,B,9,11
+JDB-000304,CWE-352-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000304.java,false,CWE-352,Cross-Site Request Forgery,1,calibration,B,9,15
+JDB-000305,CWE-352-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000305.java,true,CWE-352,Cross-Site Request Forgery,2,calibration,A,10,12
+JDB-000306,CWE-352-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000306.java,false,CWE-352,Cross-Site Request Forgery,2,calibration,A,10,16
+JDB-000307,CWE-352-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000307.java,true,CWE-352,Cross-Site Request Forgery,2,calibration,B,10,12
+JDB-000308,CWE-352-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000308.java,false,CWE-352,Cross-Site Request Forgery,2,calibration,B,10,16
+JDB-000309,CWE-352-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000309.java,true,CWE-352,Cross-Site Request Forgery,3,calibration,A,9,11
+JDB-000310,CWE-352-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000310.java,false,CWE-352,Cross-Site Request Forgery,3,calibration,A,9,15
+JDB-000311,CWE-352-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000311.java,true,CWE-352,Cross-Site Request Forgery,3,holdout,B,9,11
+JDB-000312,CWE-352-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000312.java,false,CWE-352,Cross-Site Request Forgery,3,holdout,B,9,15
+JDB-000313,CWE-352-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000313.java,true,CWE-352,Cross-Site Request Forgery,4,calibration,A,9,11
+JDB-000314,CWE-352-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000314.java,false,CWE-352,Cross-Site Request Forgery,4,calibration,A,9,15
+JDB-000315,CWE-352-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000315.java,true,CWE-352,Cross-Site Request Forgery,4,holdout,B,9,11
+JDB-000316,CWE-352-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000316.java,false,CWE-352,Cross-Site Request Forgery,4,holdout,B,9,15
+JDB-000317,CWE-352-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000317.java,true,CWE-352,Cross-Site Request Forgery,5,calibration,A,9,11
+JDB-000318,CWE-352-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000318.java,false,CWE-352,Cross-Site Request Forgery,5,calibration,A,9,15
+JDB-000319,CWE-352-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000319.java,true,CWE-352,Cross-Site Request Forgery,5,holdout,B,9,11
+JDB-000320,CWE-352-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000320.java,false,CWE-352,Cross-Site Request Forgery,5,holdout,B,9,15
+JDB-000321,CWE-400-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000321.java,true,CWE-400,Uncontrolled Resource Consumption,1,calibration,A,9,10
+JDB-000322,CWE-400-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000322.java,false,CWE-400,Uncontrolled Resource Consumption,1,calibration,A,9,11
+JDB-000323,CWE-400-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000323.java,true,CWE-400,Uncontrolled Resource Consumption,1,calibration,B,10,11
+JDB-000324,CWE-400-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000324.java,false,CWE-400,Uncontrolled Resource Consumption,1,calibration,B,10,12
+JDB-000325,CWE-400-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000325.java,true,CWE-400,Uncontrolled Resource Consumption,2,calibration,A,10,11
+JDB-000326,CWE-400-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000326.java,false,CWE-400,Uncontrolled Resource Consumption,2,calibration,A,10,12
+JDB-000327,CWE-400-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000327.java,true,CWE-400,Uncontrolled Resource Consumption,2,calibration,B,11,12
+JDB-000328,CWE-400-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000328.java,false,CWE-400,Uncontrolled Resource Consumption,2,calibration,B,11,13
+JDB-000329,CWE-400-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000329.java,true,CWE-400,Uncontrolled Resource Consumption,3,calibration,A,9,10
+JDB-000330,CWE-400-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000330.java,false,CWE-400,Uncontrolled Resource Consumption,3,calibration,A,9,11
+JDB-000331,CWE-400-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000331.java,true,CWE-400,Uncontrolled Resource Consumption,3,holdout,B,10,11
+JDB-000332,CWE-400-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000332.java,false,CWE-400,Uncontrolled Resource Consumption,3,holdout,B,10,12
+JDB-000333,CWE-400-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000333.java,true,CWE-400,Uncontrolled Resource Consumption,4,calibration,A,9,10
+JDB-000334,CWE-400-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000334.java,false,CWE-400,Uncontrolled Resource Consumption,4,calibration,A,9,11
+JDB-000335,CWE-400-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000335.java,true,CWE-400,Uncontrolled Resource Consumption,4,holdout,B,10,11
+JDB-000336,CWE-400-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000336.java,false,CWE-400,Uncontrolled Resource Consumption,4,holdout,B,10,12
+JDB-000337,CWE-400-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000337.java,true,CWE-400,Uncontrolled Resource Consumption,5,calibration,A,9,10
+JDB-000338,CWE-400-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000338.java,false,CWE-400,Uncontrolled Resource Consumption,5,calibration,A,9,11
+JDB-000339,CWE-400-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000339.java,true,CWE-400,Uncontrolled Resource Consumption,5,holdout,B,10,11
+JDB-000340,CWE-400-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000340.java,false,CWE-400,Uncontrolled Resource Consumption,5,holdout,B,10,12
+JDB-000341,CWE-434-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000341.java,true,CWE-434,Unrestricted File Upload,1,calibration,A,9,12
+JDB-000342,CWE-434-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000342.java,false,CWE-434,Unrestricted File Upload,1,calibration,A,9,14
+JDB-000343,CWE-434-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000343.java,true,CWE-434,Unrestricted File Upload,1,calibration,B,9,12
+JDB-000344,CWE-434-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000344.java,false,CWE-434,Unrestricted File Upload,1,calibration,B,9,14
+JDB-000345,CWE-434-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000345.java,true,CWE-434,Unrestricted File Upload,2,calibration,A,10,13
+JDB-000346,CWE-434-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000346.java,false,CWE-434,Unrestricted File Upload,2,calibration,A,10,15
+JDB-000347,CWE-434-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000347.java,true,CWE-434,Unrestricted File Upload,2,calibration,B,10,13
+JDB-000348,CWE-434-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000348.java,false,CWE-434,Unrestricted File Upload,2,calibration,B,10,15
+JDB-000349,CWE-434-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000349.java,true,CWE-434,Unrestricted File Upload,3,calibration,A,9,12
+JDB-000350,CWE-434-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000350.java,false,CWE-434,Unrestricted File Upload,3,calibration,A,9,14
+JDB-000351,CWE-434-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000351.java,true,CWE-434,Unrestricted File Upload,3,holdout,B,9,12
+JDB-000352,CWE-434-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000352.java,false,CWE-434,Unrestricted File Upload,3,holdout,B,9,14
+JDB-000353,CWE-434-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000353.java,true,CWE-434,Unrestricted File Upload,4,calibration,A,9,12
+JDB-000354,CWE-434-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000354.java,false,CWE-434,Unrestricted File Upload,4,calibration,A,9,14
+JDB-000355,CWE-434-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000355.java,true,CWE-434,Unrestricted File Upload,4,holdout,B,9,12
+JDB-000356,CWE-434-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000356.java,false,CWE-434,Unrestricted File Upload,4,holdout,B,9,14
+JDB-000357,CWE-434-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000357.java,true,CWE-434,Unrestricted File Upload,5,calibration,A,9,12
+JDB-000358,CWE-434-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000358.java,false,CWE-434,Unrestricted File Upload,5,calibration,A,9,14
+JDB-000359,CWE-434-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000359.java,true,CWE-434,Unrestricted File Upload,5,holdout,B,9,12
+JDB-000360,CWE-434-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000360.java,false,CWE-434,Unrestricted File Upload,5,holdout,B,9,14
+JDB-000361,CWE-470-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000361.java,true,CWE-470,Unsafe Reflection,1,calibration,A,9,10
+JDB-000362,CWE-470-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000362.java,false,CWE-470,Unsafe Reflection,1,calibration,A,9,12
+JDB-000363,CWE-470-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000363.java,true,CWE-470,Unsafe Reflection,1,calibration,B,10,11
+JDB-000364,CWE-470-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000364.java,false,CWE-470,Unsafe Reflection,1,calibration,B,10,13
+JDB-000365,CWE-470-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000365.java,true,CWE-470,Unsafe Reflection,2,calibration,A,10,11
+JDB-000366,CWE-470-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000366.java,false,CWE-470,Unsafe Reflection,2,calibration,A,10,13
+JDB-000367,CWE-470-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000367.java,true,CWE-470,Unsafe Reflection,2,calibration,B,11,12
+JDB-000368,CWE-470-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000368.java,false,CWE-470,Unsafe Reflection,2,calibration,B,11,14
+JDB-000369,CWE-470-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000369.java,true,CWE-470,Unsafe Reflection,3,calibration,A,9,10
+JDB-000370,CWE-470-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000370.java,false,CWE-470,Unsafe Reflection,3,calibration,A,9,12
+JDB-000371,CWE-470-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000371.java,true,CWE-470,Unsafe Reflection,3,holdout,B,10,11
+JDB-000372,CWE-470-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000372.java,false,CWE-470,Unsafe Reflection,3,holdout,B,10,13
+JDB-000373,CWE-470-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000373.java,true,CWE-470,Unsafe Reflection,4,calibration,A,9,10
+JDB-000374,CWE-470-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000374.java,false,CWE-470,Unsafe Reflection,4,calibration,A,9,12
+JDB-000375,CWE-470-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000375.java,true,CWE-470,Unsafe Reflection,4,holdout,B,10,11
+JDB-000376,CWE-470-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000376.java,false,CWE-470,Unsafe Reflection,4,holdout,B,10,13
+JDB-000377,CWE-470-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000377.java,true,CWE-470,Unsafe Reflection,5,calibration,A,9,10
+JDB-000378,CWE-470-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000378.java,false,CWE-470,Unsafe Reflection,5,calibration,A,9,12
+JDB-000379,CWE-470-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000379.java,true,CWE-470,Unsafe Reflection,5,holdout,B,10,11
+JDB-000380,CWE-470-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000380.java,false,CWE-470,Unsafe Reflection,5,holdout,B,10,13
+JDB-000381,CWE-502-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000381.java,true,CWE-502,Unsafe Deserialization,1,calibration,A,9,10
+JDB-000382,CWE-502-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000382.java,false,CWE-502,Unsafe Deserialization,1,calibration,A,9,13
+JDB-000383,CWE-502-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000383.java,true,CWE-502,Unsafe Deserialization,1,calibration,B,10,11
+JDB-000384,CWE-502-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000384.java,false,CWE-502,Unsafe Deserialization,1,calibration,B,10,14
+JDB-000385,CWE-502-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000385.java,true,CWE-502,Unsafe Deserialization,2,calibration,A,10,11
+JDB-000386,CWE-502-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000386.java,false,CWE-502,Unsafe Deserialization,2,calibration,A,10,14
+JDB-000387,CWE-502-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000387.java,true,CWE-502,Unsafe Deserialization,2,calibration,B,11,12
+JDB-000388,CWE-502-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000388.java,false,CWE-502,Unsafe Deserialization,2,calibration,B,11,15
+JDB-000389,CWE-502-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000389.java,true,CWE-502,Unsafe Deserialization,3,calibration,A,9,10
+JDB-000390,CWE-502-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000390.java,false,CWE-502,Unsafe Deserialization,3,calibration,A,9,13
+JDB-000391,CWE-502-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000391.java,true,CWE-502,Unsafe Deserialization,3,holdout,B,10,11
+JDB-000392,CWE-502-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000392.java,false,CWE-502,Unsafe Deserialization,3,holdout,B,10,14
+JDB-000393,CWE-502-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000393.java,true,CWE-502,Unsafe Deserialization,4,calibration,A,9,10
+JDB-000394,CWE-502-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000394.java,false,CWE-502,Unsafe Deserialization,4,calibration,A,9,13
+JDB-000395,CWE-502-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000395.java,true,CWE-502,Unsafe Deserialization,4,holdout,B,10,11
+JDB-000396,CWE-502-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000396.java,false,CWE-502,Unsafe Deserialization,4,holdout,B,10,14
+JDB-000397,CWE-502-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000397.java,true,CWE-502,Unsafe Deserialization,5,calibration,A,9,10
+JDB-000398,CWE-502-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000398.java,false,CWE-502,Unsafe Deserialization,5,calibration,A,9,13
+JDB-000399,CWE-502-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000399.java,true,CWE-502,Unsafe Deserialization,5,holdout,B,10,11
+JDB-000400,CWE-502-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000400.java,false,CWE-502,Unsafe Deserialization,5,holdout,B,10,14
+JDB-000401,CWE-532-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000401.java,true,CWE-532,Sensitive Data in Logs,1,calibration,A,9,10
+JDB-000402,CWE-532-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000402.java,false,CWE-532,Sensitive Data in Logs,1,calibration,A,9,10
+JDB-000403,CWE-532-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000403.java,true,CWE-532,Sensitive Data in Logs,1,calibration,B,10,11
+JDB-000404,CWE-532-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000404.java,false,CWE-532,Sensitive Data in Logs,1,calibration,B,10,11
+JDB-000405,CWE-532-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000405.java,true,CWE-532,Sensitive Data in Logs,2,calibration,A,10,11
+JDB-000406,CWE-532-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000406.java,false,CWE-532,Sensitive Data in Logs,2,calibration,A,10,11
+JDB-000407,CWE-532-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000407.java,true,CWE-532,Sensitive Data in Logs,2,calibration,B,11,12
+JDB-000408,CWE-532-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000408.java,false,CWE-532,Sensitive Data in Logs,2,calibration,B,11,12
+JDB-000409,CWE-532-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000409.java,true,CWE-532,Sensitive Data in Logs,3,calibration,A,9,10
+JDB-000410,CWE-532-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000410.java,false,CWE-532,Sensitive Data in Logs,3,calibration,A,9,10
+JDB-000411,CWE-532-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000411.java,true,CWE-532,Sensitive Data in Logs,3,holdout,B,10,11
+JDB-000412,CWE-532-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000412.java,false,CWE-532,Sensitive Data in Logs,3,holdout,B,10,11
+JDB-000413,CWE-532-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000413.java,true,CWE-532,Sensitive Data in Logs,4,calibration,A,9,10
+JDB-000414,CWE-532-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000414.java,false,CWE-532,Sensitive Data in Logs,4,calibration,A,9,10
+JDB-000415,CWE-532-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000415.java,true,CWE-532,Sensitive Data in Logs,4,holdout,B,10,11
+JDB-000416,CWE-532-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000416.java,false,CWE-532,Sensitive Data in Logs,4,holdout,B,10,11
+JDB-000417,CWE-532-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000417.java,true,CWE-532,Sensitive Data in Logs,5,calibration,A,9,10
+JDB-000418,CWE-532-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000418.java,false,CWE-532,Sensitive Data in Logs,5,calibration,A,9,10
+JDB-000419,CWE-532-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000419.java,true,CWE-532,Sensitive Data in Logs,5,holdout,B,10,11
+JDB-000420,CWE-532-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000420.java,false,CWE-532,Sensitive Data in Logs,5,holdout,B,10,11
+JDB-000421,CWE-601-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000421.java,true,CWE-601,Open Redirect,1,calibration,A,9,10
+JDB-000422,CWE-601-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000422.java,false,CWE-601,Open Redirect,1,calibration,A,9,12
+JDB-000423,CWE-601-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000423.java,true,CWE-601,Open Redirect,1,calibration,B,10,11
+JDB-000424,CWE-601-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000424.java,false,CWE-601,Open Redirect,1,calibration,B,10,13
+JDB-000425,CWE-601-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000425.java,true,CWE-601,Open Redirect,2,calibration,A,10,11
+JDB-000426,CWE-601-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000426.java,false,CWE-601,Open Redirect,2,calibration,A,10,13
+JDB-000427,CWE-601-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000427.java,true,CWE-601,Open Redirect,2,calibration,B,11,12
+JDB-000428,CWE-601-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000428.java,false,CWE-601,Open Redirect,2,calibration,B,11,14
+JDB-000429,CWE-601-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000429.java,true,CWE-601,Open Redirect,3,calibration,A,9,10
+JDB-000430,CWE-601-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000430.java,false,CWE-601,Open Redirect,3,calibration,A,9,12
+JDB-000431,CWE-601-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000431.java,true,CWE-601,Open Redirect,3,holdout,B,10,11
+JDB-000432,CWE-601-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000432.java,false,CWE-601,Open Redirect,3,holdout,B,10,13
+JDB-000433,CWE-601-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000433.java,true,CWE-601,Open Redirect,4,calibration,A,9,10
+JDB-000434,CWE-601-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000434.java,false,CWE-601,Open Redirect,4,calibration,A,9,12
+JDB-000435,CWE-601-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000435.java,true,CWE-601,Open Redirect,4,holdout,B,10,11
+JDB-000436,CWE-601-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000436.java,false,CWE-601,Open Redirect,4,holdout,B,10,13
+JDB-000437,CWE-601-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000437.java,true,CWE-601,Open Redirect,5,calibration,A,9,10
+JDB-000438,CWE-601-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000438.java,false,CWE-601,Open Redirect,5,calibration,A,9,12
+JDB-000439,CWE-601-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000439.java,true,CWE-601,Open Redirect,5,holdout,B,10,11
+JDB-000440,CWE-601-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000440.java,false,CWE-601,Open Redirect,5,holdout,B,10,13
+JDB-000441,CWE-611-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000441.java,true,CWE-611,XML External Entity,1,calibration,A,9,10
+JDB-000442,CWE-611-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000442.java,false,CWE-611,XML External Entity,1,calibration,A,9,14
+JDB-000443,CWE-611-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000443.java,true,CWE-611,XML External Entity,1,calibration,B,10,11
+JDB-000444,CWE-611-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000444.java,false,CWE-611,XML External Entity,1,calibration,B,10,15
+JDB-000445,CWE-611-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000445.java,true,CWE-611,XML External Entity,2,calibration,A,10,11
+JDB-000446,CWE-611-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000446.java,false,CWE-611,XML External Entity,2,calibration,A,10,15
+JDB-000447,CWE-611-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000447.java,true,CWE-611,XML External Entity,2,calibration,B,11,12
+JDB-000448,CWE-611-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000448.java,false,CWE-611,XML External Entity,2,calibration,B,11,16
+JDB-000449,CWE-611-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000449.java,true,CWE-611,XML External Entity,3,calibration,A,9,10
+JDB-000450,CWE-611-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000450.java,false,CWE-611,XML External Entity,3,calibration,A,9,14
+JDB-000451,CWE-611-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000451.java,true,CWE-611,XML External Entity,3,holdout,B,10,11
+JDB-000452,CWE-611-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000452.java,false,CWE-611,XML External Entity,3,holdout,B,10,15
+JDB-000453,CWE-611-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000453.java,true,CWE-611,XML External Entity,4,calibration,A,9,10
+JDB-000454,CWE-611-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000454.java,false,CWE-611,XML External Entity,4,calibration,A,9,14
+JDB-000455,CWE-611-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000455.java,true,CWE-611,XML External Entity,4,holdout,B,10,11
+JDB-000456,CWE-611-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000456.java,false,CWE-611,XML External Entity,4,holdout,B,10,15
+JDB-000457,CWE-611-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000457.java,true,CWE-611,XML External Entity,5,calibration,A,9,10
+JDB-000458,CWE-611-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000458.java,false,CWE-611,XML External Entity,5,calibration,A,9,14
+JDB-000459,CWE-611-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000459.java,true,CWE-611,XML External Entity,5,holdout,B,10,11
+JDB-000460,CWE-611-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000460.java,false,CWE-611,XML External Entity,5,holdout,B,10,15
+JDB-000461,CWE-614-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000461.java,true,CWE-614,Cookie without Secure,1,calibration,A,9,11
+JDB-000462,CWE-614-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000462.java,false,CWE-614,Cookie without Secure,1,calibration,A,9,12
+JDB-000463,CWE-614-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000463.java,true,CWE-614,Cookie without Secure,1,calibration,B,10,12
+JDB-000464,CWE-614-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000464.java,false,CWE-614,Cookie without Secure,1,calibration,B,10,13
+JDB-000465,CWE-614-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000465.java,true,CWE-614,Cookie without Secure,2,calibration,A,10,12
+JDB-000466,CWE-614-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000466.java,false,CWE-614,Cookie without Secure,2,calibration,A,10,13
+JDB-000467,CWE-614-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000467.java,true,CWE-614,Cookie without Secure,2,calibration,B,11,13
+JDB-000468,CWE-614-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000468.java,false,CWE-614,Cookie without Secure,2,calibration,B,11,14
+JDB-000469,CWE-614-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000469.java,true,CWE-614,Cookie without Secure,3,calibration,A,9,11
+JDB-000470,CWE-614-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000470.java,false,CWE-614,Cookie without Secure,3,calibration,A,9,12
+JDB-000471,CWE-614-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000471.java,true,CWE-614,Cookie without Secure,3,holdout,B,10,12
+JDB-000472,CWE-614-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000472.java,false,CWE-614,Cookie without Secure,3,holdout,B,10,13
+JDB-000473,CWE-614-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000473.java,true,CWE-614,Cookie without Secure,4,calibration,A,9,11
+JDB-000474,CWE-614-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000474.java,false,CWE-614,Cookie without Secure,4,calibration,A,9,12
+JDB-000475,CWE-614-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000475.java,true,CWE-614,Cookie without Secure,4,holdout,B,10,12
+JDB-000476,CWE-614-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000476.java,false,CWE-614,Cookie without Secure,4,holdout,B,10,13
+JDB-000477,CWE-614-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000477.java,true,CWE-614,Cookie without Secure,5,calibration,A,9,11
+JDB-000478,CWE-614-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000478.java,false,CWE-614,Cookie without Secure,5,calibration,A,9,12
+JDB-000479,CWE-614-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000479.java,true,CWE-614,Cookie without Secure,5,holdout,B,10,12
+JDB-000480,CWE-614-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000480.java,false,CWE-614,Cookie without Secure,5,holdout,B,10,13
+JDB-000481,CWE-643-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000481.java,true,CWE-643,XPath Injection,1,calibration,A,9,11
+JDB-000482,CWE-643-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000482.java,false,CWE-643,XPath Injection,1,calibration,A,9,12
+JDB-000483,CWE-643-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000483.java,true,CWE-643,XPath Injection,1,calibration,B,10,12
+JDB-000484,CWE-643-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000484.java,false,CWE-643,XPath Injection,1,calibration,B,10,13
+JDB-000485,CWE-643-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000485.java,true,CWE-643,XPath Injection,2,calibration,A,10,12
+JDB-000486,CWE-643-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000486.java,false,CWE-643,XPath Injection,2,calibration,A,10,13
+JDB-000487,CWE-643-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000487.java,true,CWE-643,XPath Injection,2,calibration,B,11,13
+JDB-000488,CWE-643-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000488.java,false,CWE-643,XPath Injection,2,calibration,B,11,14
+JDB-000489,CWE-643-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000489.java,true,CWE-643,XPath Injection,3,calibration,A,9,11
+JDB-000490,CWE-643-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000490.java,false,CWE-643,XPath Injection,3,calibration,A,9,12
+JDB-000491,CWE-643-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000491.java,true,CWE-643,XPath Injection,3,holdout,B,10,12
+JDB-000492,CWE-643-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000492.java,false,CWE-643,XPath Injection,3,holdout,B,10,13
+JDB-000493,CWE-643-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000493.java,true,CWE-643,XPath Injection,4,calibration,A,9,11
+JDB-000494,CWE-643-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000494.java,false,CWE-643,XPath Injection,4,calibration,A,9,12
+JDB-000495,CWE-643-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000495.java,true,CWE-643,XPath Injection,4,holdout,B,10,12
+JDB-000496,CWE-643-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000496.java,false,CWE-643,XPath Injection,4,holdout,B,10,13
+JDB-000497,CWE-643-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000497.java,true,CWE-643,XPath Injection,5,calibration,A,9,11
+JDB-000498,CWE-643-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000498.java,false,CWE-643,XPath Injection,5,calibration,A,9,12
+JDB-000499,CWE-643-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000499.java,true,CWE-643,XPath Injection,5,holdout,B,10,12
+JDB-000500,CWE-643-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000500.java,false,CWE-643,XPath Injection,5,holdout,B,10,13
+JDB-000501,CWE-798-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000501.java,true,CWE-798,Hard-coded Credentials,1,calibration,A,9,10
+JDB-000502,CWE-798-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000502.java,false,CWE-798,Hard-coded Credentials,1,calibration,A,9,11
+JDB-000503,CWE-798-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000503.java,true,CWE-798,Hard-coded Credentials,1,calibration,B,10,11
+JDB-000504,CWE-798-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000504.java,false,CWE-798,Hard-coded Credentials,1,calibration,B,10,12
+JDB-000505,CWE-798-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000505.java,true,CWE-798,Hard-coded Credentials,2,calibration,A,10,11
+JDB-000506,CWE-798-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000506.java,false,CWE-798,Hard-coded Credentials,2,calibration,A,10,12
+JDB-000507,CWE-798-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000507.java,true,CWE-798,Hard-coded Credentials,2,calibration,B,11,12
+JDB-000508,CWE-798-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000508.java,false,CWE-798,Hard-coded Credentials,2,calibration,B,11,13
+JDB-000509,CWE-798-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000509.java,true,CWE-798,Hard-coded Credentials,3,calibration,A,9,10
+JDB-000510,CWE-798-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000510.java,false,CWE-798,Hard-coded Credentials,3,calibration,A,9,11
+JDB-000511,CWE-798-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000511.java,true,CWE-798,Hard-coded Credentials,3,holdout,B,10,11
+JDB-000512,CWE-798-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000512.java,false,CWE-798,Hard-coded Credentials,3,holdout,B,10,12
+JDB-000513,CWE-798-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000513.java,true,CWE-798,Hard-coded Credentials,4,calibration,A,9,10
+JDB-000514,CWE-798-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000514.java,false,CWE-798,Hard-coded Credentials,4,calibration,A,9,11
+JDB-000515,CWE-798-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000515.java,true,CWE-798,Hard-coded Credentials,4,holdout,B,10,11
+JDB-000516,CWE-798-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000516.java,false,CWE-798,Hard-coded Credentials,4,holdout,B,10,12
+JDB-000517,CWE-798-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000517.java,true,CWE-798,Hard-coded Credentials,5,calibration,A,9,10
+JDB-000518,CWE-798-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000518.java,false,CWE-798,Hard-coded Credentials,5,calibration,A,9,11
+JDB-000519,CWE-798-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000519.java,true,CWE-798,Hard-coded Credentials,5,holdout,B,10,11
+JDB-000520,CWE-798-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000520.java,false,CWE-798,Hard-coded Credentials,5,holdout,B,10,12
+JDB-000521,CWE-862-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000521.java,true,CWE-862,Missing Authorization,1,calibration,A,10,12
+JDB-000522,CWE-862-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000522.java,false,CWE-862,Missing Authorization,1,calibration,A,10,13
+JDB-000523,CWE-862-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000523.java,true,CWE-862,Missing Authorization,1,calibration,B,10,12
+JDB-000524,CWE-862-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000524.java,false,CWE-862,Missing Authorization,1,calibration,B,10,13
+JDB-000525,CWE-862-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000525.java,true,CWE-862,Missing Authorization,2,calibration,A,11,13
+JDB-000526,CWE-862-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000526.java,false,CWE-862,Missing Authorization,2,calibration,A,11,14
+JDB-000527,CWE-862-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000527.java,true,CWE-862,Missing Authorization,2,calibration,B,11,13
+JDB-000528,CWE-862-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000528.java,false,CWE-862,Missing Authorization,2,calibration,B,11,14
+JDB-000529,CWE-862-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000529.java,true,CWE-862,Missing Authorization,3,calibration,A,10,12
+JDB-000530,CWE-862-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000530.java,false,CWE-862,Missing Authorization,3,calibration,A,10,13
+JDB-000531,CWE-862-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000531.java,true,CWE-862,Missing Authorization,3,holdout,B,10,12
+JDB-000532,CWE-862-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000532.java,false,CWE-862,Missing Authorization,3,holdout,B,10,13
+JDB-000533,CWE-862-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000533.java,true,CWE-862,Missing Authorization,4,calibration,A,10,12
+JDB-000534,CWE-862-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000534.java,false,CWE-862,Missing Authorization,4,calibration,A,10,13
+JDB-000535,CWE-862-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000535.java,true,CWE-862,Missing Authorization,4,holdout,B,10,12
+JDB-000536,CWE-862-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000536.java,false,CWE-862,Missing Authorization,4,holdout,B,10,13
+JDB-000537,CWE-862-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000537.java,true,CWE-862,Missing Authorization,5,calibration,A,10,12
+JDB-000538,CWE-862-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000538.java,false,CWE-862,Missing Authorization,5,calibration,A,10,13
+JDB-000539,CWE-862-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000539.java,true,CWE-862,Missing Authorization,5,holdout,B,10,12
+JDB-000540,CWE-862-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000540.java,false,CWE-862,Missing Authorization,5,holdout,B,10,13
+JDB-000541,CWE-918-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000541.java,true,CWE-918,Server-Side Request Forgery,1,calibration,A,9,10
+JDB-000542,CWE-918-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000542.java,false,CWE-918,Server-Side Request Forgery,1,calibration,A,9,12
+JDB-000543,CWE-918-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000543.java,true,CWE-918,Server-Side Request Forgery,1,calibration,B,10,11
+JDB-000544,CWE-918-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000544.java,false,CWE-918,Server-Side Request Forgery,1,calibration,B,10,13
+JDB-000545,CWE-918-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000545.java,true,CWE-918,Server-Side Request Forgery,2,calibration,A,10,11
+JDB-000546,CWE-918-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000546.java,false,CWE-918,Server-Side Request Forgery,2,calibration,A,10,13
+JDB-000547,CWE-918-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000547.java,true,CWE-918,Server-Side Request Forgery,2,calibration,B,11,12
+JDB-000548,CWE-918-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000548.java,false,CWE-918,Server-Side Request Forgery,2,calibration,B,11,14
+JDB-000549,CWE-918-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000549.java,true,CWE-918,Server-Side Request Forgery,3,calibration,A,9,10
+JDB-000550,CWE-918-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000550.java,false,CWE-918,Server-Side Request Forgery,3,calibration,A,9,12
+JDB-000551,CWE-918-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000551.java,true,CWE-918,Server-Side Request Forgery,3,holdout,B,10,11
+JDB-000552,CWE-918-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000552.java,false,CWE-918,Server-Side Request Forgery,3,holdout,B,10,13
+JDB-000553,CWE-918-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000553.java,true,CWE-918,Server-Side Request Forgery,4,calibration,A,9,10
+JDB-000554,CWE-918-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000554.java,false,CWE-918,Server-Side Request Forgery,4,calibration,A,9,12
+JDB-000555,CWE-918-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000555.java,true,CWE-918,Server-Side Request Forgery,4,holdout,B,10,11
+JDB-000556,CWE-918-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000556.java,false,CWE-918,Server-Side Request Forgery,4,holdout,B,10,13
+JDB-000557,CWE-918-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000557.java,true,CWE-918,Server-Side Request Forgery,5,calibration,A,9,10
+JDB-000558,CWE-918-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000558.java,false,CWE-918,Server-Side Request Forgery,5,calibration,A,9,12
+JDB-000559,CWE-918-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000559.java,true,CWE-918,Server-Side Request Forgery,5,holdout,B,10,11
+JDB-000560,CWE-918-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000560.java,false,CWE-918,Server-Side Request Forgery,5,holdout,B,10,13
+JDB-000561,CWE-1004-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000561.java,true,CWE-1004,Cookie without HttpOnly,1,calibration,A,9,11
+JDB-000562,CWE-1004-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000562.java,false,CWE-1004,Cookie without HttpOnly,1,calibration,A,9,12
+JDB-000563,CWE-1004-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000563.java,true,CWE-1004,Cookie without HttpOnly,1,calibration,B,10,12
+JDB-000564,CWE-1004-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000564.java,false,CWE-1004,Cookie without HttpOnly,1,calibration,B,10,13
+JDB-000565,CWE-1004-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000565.java,true,CWE-1004,Cookie without HttpOnly,2,calibration,A,10,12
+JDB-000566,CWE-1004-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000566.java,false,CWE-1004,Cookie without HttpOnly,2,calibration,A,10,13
+JDB-000567,CWE-1004-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000567.java,true,CWE-1004,Cookie without HttpOnly,2,calibration,B,11,13
+JDB-000568,CWE-1004-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000568.java,false,CWE-1004,Cookie without HttpOnly,2,calibration,B,11,14
+JDB-000569,CWE-1004-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000569.java,true,CWE-1004,Cookie without HttpOnly,3,calibration,A,9,11
+JDB-000570,CWE-1004-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000570.java,false,CWE-1004,Cookie without HttpOnly,3,calibration,A,9,12
+JDB-000571,CWE-1004-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000571.java,true,CWE-1004,Cookie without HttpOnly,3,holdout,B,10,12
+JDB-000572,CWE-1004-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000572.java,false,CWE-1004,Cookie without HttpOnly,3,holdout,B,10,13
+JDB-000573,CWE-1004-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000573.java,true,CWE-1004,Cookie without HttpOnly,4,calibration,A,9,11
+JDB-000574,CWE-1004-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000574.java,false,CWE-1004,Cookie without HttpOnly,4,calibration,A,9,12
+JDB-000575,CWE-1004-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000575.java,true,CWE-1004,Cookie without HttpOnly,4,holdout,B,10,12
+JDB-000576,CWE-1004-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000576.java,false,CWE-1004,Cookie without HttpOnly,4,holdout,B,10,13
+JDB-000577,CWE-1004-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000577.java,true,CWE-1004,Cookie without HttpOnly,5,calibration,A,9,11
+JDB-000578,CWE-1004-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000578.java,false,CWE-1004,Cookie without HttpOnly,5,calibration,A,9,12
+JDB-000579,CWE-1004-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000579.java,true,CWE-1004,Cookie without HttpOnly,5,holdout,B,10,12
+JDB-000580,CWE-1004-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000580.java,false,CWE-1004,Cookie without HttpOnly,5,holdout,B,10,13
+JDB-000581,CWE-1333-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000581.java,true,CWE-1333,Inefficient Regular Expression,1,calibration,A,9,10
+JDB-000582,CWE-1333-L1-A,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000582.java,false,CWE-1333,Inefficient Regular Expression,1,calibration,A,9,10
+JDB-000583,CWE-1333-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000583.java,true,CWE-1333,Inefficient Regular Expression,1,calibration,B,10,11
+JDB-000584,CWE-1333-L1-B,scan-target/io/xguardian/javabench/cases/calibration/level1/Case000584.java,false,CWE-1333,Inefficient Regular Expression,1,calibration,B,10,11
+JDB-000585,CWE-1333-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000585.java,true,CWE-1333,Inefficient Regular Expression,2,calibration,A,10,11
+JDB-000586,CWE-1333-L2-A,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000586.java,false,CWE-1333,Inefficient Regular Expression,2,calibration,A,10,11
+JDB-000587,CWE-1333-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000587.java,true,CWE-1333,Inefficient Regular Expression,2,calibration,B,11,12
+JDB-000588,CWE-1333-L2-B,scan-target/io/xguardian/javabench/cases/calibration/level2/Case000588.java,false,CWE-1333,Inefficient Regular Expression,2,calibration,B,11,12
+JDB-000589,CWE-1333-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000589.java,true,CWE-1333,Inefficient Regular Expression,3,calibration,A,9,10
+JDB-000590,CWE-1333-L3-A,scan-target/io/xguardian/javabench/cases/calibration/level3/Case000590.java,false,CWE-1333,Inefficient Regular Expression,3,calibration,A,9,10
+JDB-000591,CWE-1333-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000591.java,true,CWE-1333,Inefficient Regular Expression,3,holdout,B,10,11
+JDB-000592,CWE-1333-L3-B,scan-target/io/xguardian/javabench/cases/holdout/level3/Case000592.java,false,CWE-1333,Inefficient Regular Expression,3,holdout,B,10,11
+JDB-000593,CWE-1333-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000593.java,true,CWE-1333,Inefficient Regular Expression,4,calibration,A,9,10
+JDB-000594,CWE-1333-L4-A,scan-target/io/xguardian/javabench/cases/calibration/level4/Case000594.java,false,CWE-1333,Inefficient Regular Expression,4,calibration,A,9,10
+JDB-000595,CWE-1333-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000595.java,true,CWE-1333,Inefficient Regular Expression,4,holdout,B,10,11
+JDB-000596,CWE-1333-L4-B,scan-target/io/xguardian/javabench/cases/holdout/level4/Case000596.java,false,CWE-1333,Inefficient Regular Expression,4,holdout,B,10,11
+JDB-000597,CWE-1333-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000597.java,true,CWE-1333,Inefficient Regular Expression,5,calibration,A,9,10
+JDB-000598,CWE-1333-L5-A,scan-target/io/xguardian/javabench/cases/calibration/level5/Case000598.java,false,CWE-1333,Inefficient Regular Expression,5,calibration,A,9,10
+JDB-000599,CWE-1333-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000599.java,true,CWE-1333,Inefficient Regular Expression,5,holdout,B,10,11
+JDB-000600,CWE-1333-L5-B,scan-target/io/xguardian/javabench/cases/holdout/level5/Case000600.java,false,CWE-1333,Inefficient Regular Expression,5,holdout,B,10,11

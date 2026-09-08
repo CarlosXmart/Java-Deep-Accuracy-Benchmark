@@ -1,0 +1,166 @@
+{
+  "total": 600,
+  "vulnerable": 300,
+  "safe": 300,
+  "calibration": 420,
+  "holdout": 180,
+  "by_difficulty": {
+    "1": 120,
+    "2": 120,
+    "3": 120,
+    "4": 120,
+    "5": 120
+  },
+  "by_cwe": {
+    "CWE-22": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-78": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-79": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-89": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-90": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-94": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-113": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-209": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-295": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-319": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-321": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-327": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-328": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-330": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-347": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-352": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-400": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-434": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-470": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-502": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-532": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-601": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-611": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-614": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-643": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-798": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-862": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-918": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-1004": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    },
+    "CWE-1333": {
+      "total": 20,
+      "vulnerable": 10,
+      "safe": 10
+    }
+  }
+}

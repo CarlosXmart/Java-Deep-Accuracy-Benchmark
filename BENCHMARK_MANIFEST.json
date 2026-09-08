@@ -1,0 +1,39 @@
+{
+  "name": "Java Deep Accuracy Benchmark",
+  "version": "1.0.0",
+  "language": "Java",
+  "java_release": 17,
+  "official_scan_path": "scan-target/",
+  "calibration_scan_path": "scan-target/io/xguardian/javabench/cases/calibration/",
+  "scored_cases": 600,
+  "vulnerable_cases": 300,
+  "safe_cases": 300,
+  "cwes": 30,
+  "difficulty_levels": 5,
+  "calibration_cases": 420,
+  "holdout_cases": 180,
+  "methodology_references": [
+    {
+      "name": "OWASP Benchmark for Java",
+      "url": "https://owasp.org/www-project-benchmark/"
+    },
+    {
+      "name": "NIST SARD Juliet Java 1.3",
+      "url": "https://samate.nist.gov/SARD/test-suites/111"
+    },
+    {
+      "name": "NIST Juliet publication",
+      "url": "https://www.nist.gov/publications/juliet-11-cc-and-java-test-suite"
+    },
+    {
+      "name": "MITRE CWE",
+      "url": "https://cwe.mitre.org/"
+    }
+  ],
+  "xguardian_action": {
+    "repository": "xguardian-actions/actions",
+    "path": "sast",
+    "release": "v26.6.2",
+    "commit": "6373d9375d3a859f602dcf53b37a3d8326c8a248"
+  }
+}
