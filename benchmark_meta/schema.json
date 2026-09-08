@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/CarlosXmart/Java-Deep-Accuracy-Benchmark/benchmark_meta/schema.json",
+  "title": "Java Deep Accuracy Benchmark ground truth",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "benchmark_version",
+    "scan_path",
+    "case_count",
+    "cases"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "benchmark_version": {
+      "type": "string"
+    },
+    "scan_path": {
+      "const": "scan-target/"
+    },
+    "case_count": {
+      "const": 600
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 600,
+      "maxItems": 600,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "path",
+          "expected_vulnerable",
+          "preferred_cwe",
+          "accepted_cwes",
+          "category",
+          "difficulty",
+          "framework",
+          "source",
+          "sink",
+          "dataflow",
+          "target_start_line",
+          "target_end_line",
+          "rationale",
+          "official_reference",
+          "cohort"
+        ]
+      }
+    }
+  }
+}
