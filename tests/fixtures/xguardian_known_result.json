@@ -1,0 +1,29 @@
+{
+  "sumario": {
+    "total": 2,
+    "critico": 1,
+    "alto": 1,
+    "medio": 0,
+    "baixo": 0
+  },
+  "vulnerabilidades": [
+    {
+      "id": 1,
+      "cwe": "CWE-22",
+      "severidade": "CRITICAL",
+      "linguagem": "java",
+      "arquivo": "/tmp/scanner/scan-target/io/xguardian/javabench/cases/level1/Case000001.java",
+      "linha": 10,
+      "nome": "Path traversal"
+    },
+    {
+      "id": 2,
+      "cwe": "CWE-22",
+      "severidade": "HIGH",
+      "linguagem": "java",
+      "arquivo": "io/xguardian/javabench/cases/level1/Case000004.java",
+      "linha": "12",
+      "nome": "Path traversal"
+    }
+  ]
+}
