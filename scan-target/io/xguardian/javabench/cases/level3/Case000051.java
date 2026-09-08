@@ -15,6 +15,4 @@ public class Case000051 {
     private String relay(String value) {
         return value;
     }
-
-    private String relay(String value) { return value; }
 }

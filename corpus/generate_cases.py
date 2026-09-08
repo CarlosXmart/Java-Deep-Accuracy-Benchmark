@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFINITIONS = ROOT / "corpus" / "definitions.json"
+OVERRIDES = ROOT / "corpus" / "source_overrides.json"
 
 CSV_COLUMNS = [
     "id", "path", "expected_vulnerable", "preferred_cwe", "category",
@@ -17,7 +18,18 @@ CSV_COLUMNS = [
 
 def build_outputs():
     doc = json.loads(DEFINITIONS.read_text(encoding="utf-8"))
-    cases = doc["cases"]
+    cases = [dict(case) for case in doc["cases"]]
+    if OVERRIDES.is_file():
+        overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")).get("overrides", {})
+        by_id = {case["id"]: case for case in cases}
+        unknown = sorted(set(overrides) - set(by_id))
+        if unknown:
+            raise SystemExit("Unknown source override IDs: " + ", ".join(unknown))
+        for case_id, patch in overrides.items():
+            if set(patch) != {"source_code"}:
+                raise SystemExit(f"{case_id}: source override may only replace source_code")
+            by_id[case_id]["source_code"] = patch["source_code"]
+
     gt_cases = [{k: v for k, v in case.items() if k != "source_code"} for case in cases]
     gt = {
         "schema_version": "1.0.0",
@@ -45,7 +57,6 @@ def build_outputs():
             group = groups[str(case[field])]
             group["total"] += 1
             group["vulnerable" if case["expected_vulnerable"] else "safe"] += 1
-        # Preserve the reviewed corpus ordering from definitions.json.
         counts[key] = dict(groups)
     return cases, gt, counts
 

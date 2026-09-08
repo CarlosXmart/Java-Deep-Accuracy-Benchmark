@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "reason": "Compiler-discovered canonical source corrections. Applied deterministically during materialization; ground-truth semantics and scored target lines are unchanged.",
+  "overrides": {
+    "JAV-000049": {
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\n\npublic class Case000049 {\n    public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {\n        String value = relay(request.getParameter(\"name\"));\n        response.setContentType(\"text/html\");\n        response.getWriter().write(\"<div>\" + value + \"</div>\");\n        return null;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n}\n"
+    },
+    "JAV-000051": {
+      "source_code": "package io.xguardian.javabench.cases.level3;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport jakarta.servlet.http.HttpServletResponse;\n\npublic class Case000051 {\n    public Object run(HttpServletRequest request, HttpServletResponse response) throws Exception {\n        String value = relay(request.getParameter(\"message\"));\n        response.setContentType(\"text/html\");\n        response.getWriter().write(String.format(\"<p>%s</p>\", value));\n        return null;\n    }\n\n    private String relay(String value) {\n        return value;\n    }\n}\n"
+    },
+    "JAV-000553": {
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000553 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+    },
+    "JAV-000554": {
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000554 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"value\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+    },
+    "JAV-000556": {
+      "source_code": "package io.xguardian.javabench.cases.level4;\n\nimport io.xguardian.javabench.support.BenchSupport;\nimport jakarta.servlet.http.HttpServletRequest;\nimport java.net.URI;\nimport java.net.URL;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\n\npublic class Case000556 {\n    public Object run(HttpServletRequest request) throws Exception {\n        String value = request.getParameter(\"q\");\n        URI uri = URI.create(value);\n        if (!BenchSupport.allowedHost(uri)) throw new SecurityException(\"destination not allowed\");\n        HttpRequest outboundRequest = HttpRequest.newBuilder(uri).GET().build();\n        return HttpClient.newHttpClient().sendAsync(outboundRequest, java.net.http.HttpResponse.BodyHandlers.discarding());\n    }\n}\n"
+    }
+  }
+}
