@@ -86,7 +86,6 @@ python3 tools/compare_runs.py \
 │       ├── cases/
 │       │   ├── calibration/
 │       │   └── holdout/
-│       └── support/
 ├── build-harness/               # Maven; não deve entrar no scan
 ├── ground-truth/                # verdade conhecida; não deve entrar no scan
 ├── docs/
